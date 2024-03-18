@@ -1,0 +1,425 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     18049,        417]
+NotebookOptionsPosition[     16667,        384]
+NotebookOutlinePosition[     17073,        400]
+CellTagsIndexPosition[     17030,        397]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"test", " ", "=", " ", 
+  RowBox[{"Graph", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"\"\<Helena\>\"", "\[UndirectedEdge]", "\"\<Duluth\>\""}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"\"\<Helena\>\"", "\[UndirectedEdge]", "\"\<Winnipeg\>\""}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"\"\<Winnipeg\>\"", "\[UndirectedEdge]", "\"\<Duluth\>\""}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"\"\<Helena\>\"", "\[UndirectedEdge]", "\"\<Omaha\>\""}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"\"\<Omaha\>\"", "\[UndirectedEdge]", "\"\<Duluth\>\""}]}], 
+     "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"EdgeWeight", "->", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "4", ",", "4", ",", "5", ",", "2"}], "}"}]}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"VertexLabels", "->", "\"\<Name\>\""}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"EdgeLabels", "->", "\"\<EdgeWeight\>\""}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.919768423598997*^9, 3.919768606964239*^9}, {
+  3.919768651404747*^9, 3.9197686610032196`*^9}, {3.919768706753023*^9, 
+  3.919768713928499*^9}, {3.9197688117727222`*^9, 3.919768825748043*^9}, {
+  3.9197689470299664`*^9, 3.9197689495716686`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"65a1dca2-6852-354a-b068-39520b77d516"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{"Helena", "Duluth", "Winnipeg", "Omaha"}, {
+      Null, {{1, 2}, {1, 3}, {3, 2}, {1, 4}, {4, 2}}}, {
+      EdgeLabels -> {"EdgeWeight"}, VertexLabels -> {"Name"}, 
+       EdgeWeight -> {6, 4, 4, 5, 2}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+         {Arrowheads[0.], 
+          ArrowBox[{{0.933811463554344, 0.869482848690875}, {
+           0.9341177427775514, 0.}}, 0.021528196942231848`]}, 
+         InsetBox["6", {0.9339646031659476, 0.4347414243454375}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Arrowheads[0.], 
+          ArrowBox[{{0.933811463554344, 0.869482848690875}, {0., 
+           0.43502688266879386`}}, 0.021528196942231848`]}, 
+         InsetBox["4", {0.466905731777172, 0.6522548656798344}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Arrowheads[0.], 
+          ArrowBox[{{0.933811463554344, 0.869482848690875}, {
+           1.8676183598099563`, 0.43516953249600193`}}, 
+           0.021528196942231848`]}, 
+         InsetBox["5", {1.40071491168215, 0.6523261905934384}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Arrowheads[0.], 
+          ArrowBox[{{0.9341177427775514, 0.}, {0., 0.43502688266879386`}}, 
+           0.021528196942231848`]}, 
+         InsetBox["4", {0.4670588713887757, 0.21751344133439693}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Arrowheads[0.], 
+          ArrowBox[{{0.9341177427775514, 0.}, {1.8676183598099563`, 
+           0.43516953249600193`}}, 0.021528196942231848`]}, 
+         InsetBox["2", {1.400868051293754, 0.21758476624800097}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}}, 
+       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[
+        0.7]}], {
+         DiskBox[{0.933811463554344, 0.869482848690875}, 
+          0.021528196942231848], 
+         InsetBox["\<\"Helena\"\>", 
+          Offset[{2, 2}, {0.9553396604965758, 0.8910110456331068}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{0.9341177427775514, 0.}, 0.021528196942231848], 
+         InsetBox["\<\"Duluth\"\>", 
+          Offset[{2, 2}, {0.9556459397197833, 0.021528196942231848}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{0., 0.43502688266879386`}, 0.021528196942231848], 
+         InsetBox["\<\"Winnipeg\"\>", 
+          Offset[{2, 2}, {0.021528196942231848, 0.4565550796110257}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{1.8676183598099563`, 0.43516953249600193`}, 
+          0.021528196942231848], 
+         InsetBox["\<\"Omaha\"\>", 
+          Offset[{2, 2}, {1.8891465567521881, 0.4566977294382338}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{3.9197685391638336`*^9, 3.919768615168585*^9, 
+  3.9197686618624363`*^9, 3.919768714625757*^9, 3.9197689499828243`*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"4f3daa74-debf-574a-89ca-db6da2a93939"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindShortestPath", "[", 
+  RowBox[{"test", ",", " ", "\"\<Winnipeg\>\"", ",", "\"\<Omaha\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.919768729692068*^9, 3.9197687323863697`*^9}, {
+  3.9197689303950367`*^9, 3.9197689917067757`*^9}, {3.919769112277422*^9, 
+  3.919769112616829*^9}},
+ NumberMarks->False,
+ CellLabel->"In[19]:=",ExpressionUUID->"2497e5c1-ca5c-f144-b372-5d52f8b4c104"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Winnipeg\"\>", ",", "\<\"Duluth\"\>", ",", "\<\"Omaha\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.919768617918089*^9, 3.9197687347858086`*^9, {3.919768968202383*^9, 
+   3.9197689942467117`*^9}},
+ CellLabel->"Out[19]=",ExpressionUUID->"367b4cae-681a-6548-a1c1-43118c7fb12c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HighlightGraph", "[", 
+  RowBox[{
+   RowBox[{"Graph", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Helena\>\"", ",", " ", "\"\<Duluth\>\"", ",", " ", 
+       "\"\<Winnipeg\>\"", ",", " ", "\"\<Omaha\>\""}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"UndirectedEdge", "[", 
+        RowBox[{"\"\<Helena\>\"", ",", " ", "\"\<Duluth\>\""}], "]"}], ",", 
+       " ", 
+       RowBox[{"UndirectedEdge", "[", 
+        RowBox[{"\"\<Helena\>\"", ",", " ", "\"\<Winnipeg\>\""}], "]"}], ",", 
+       " ", 
+       RowBox[{"UndirectedEdge", "[", 
+        RowBox[{"\"\<Winnipeg\>\"", ",", " ", "\"\<Duluth\>\""}], "]"}], ",", 
+       " ", 
+       RowBox[{"UndirectedEdge", "[", 
+        RowBox[{"\"\<Helena\>\"", ",", " ", "\"\<Omaha\>\""}], "]"}], ",", 
+       " ", 
+       RowBox[{"UndirectedEdge", "[", 
+        RowBox[{"\"\<Omaha\>\"", ",", " ", "\"\<Duluth\>\""}], "]"}]}], "}"}],
+      ",", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"EdgeLabels", " ", "->", " ", 
+        RowBox[{"{", "\"\<EdgeWeight\>\"", "}"}]}], ",", " ", 
+       RowBox[{"VertexLabels", " ", "->", " ", 
+        RowBox[{"{", "\"\<Name\>\"", "}"}]}], ",", " ", 
+       RowBox[{"EdgeWeight", " ", "->", " ", 
+        RowBox[{"{", 
+         RowBox[{
+         "6", ",", " ", "4", ",", " ", "4", ",", " ", "5", ",", " ", "2"}], 
+         "}"}]}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"PathGraph", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Winnipeg\>\"", ",", "\"\<Duluth\>\"", ",", "\"\<Omaha\>\""}], "}"}],
+     "]"}]}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[20]:=",ExpressionUUID->"6e93e153-8ba0-cc43-9f35-431b06706f81"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{"Helena", "Duluth", "Winnipeg", "Omaha"}, {
+      Null, {{1, 2}, {1, 3}, {3, 2}, {1, 4}, {4, 2}}}, {
+      EdgeLabels -> {"EdgeWeight"}, VertexLabels -> {"Name"}, GraphHighlight -> {
+         UndirectedEdge["Winnipeg", "Duluth"], 
+         UndirectedEdge["Duluth", "Omaha"], "Duluth", "Omaha", "Winnipeg"}, 
+       EdgeWeight -> {6, 4, 4, 5, 2}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+         {Arrowheads[0.], 
+          ArrowBox[{{0.933811463554344, 0.869482848690875}, {
+           0.9341177427775514, 0.}}, 0.021528196942231848`]}, 
+         InsetBox["6", {0.9339646031659476, 0.4347414243454375}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Arrowheads[0.], 
+          ArrowBox[{{0.933811463554344, 0.869482848690875}, {0., 
+           0.43502688266879386`}}, 0.021528196942231848`]}, 
+         InsetBox["4", {0.466905731777172, 0.6522548656798344}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Arrowheads[0.], 
+          ArrowBox[{{0.933811463554344, 0.869482848690875}, {
+           1.8676183598099563`, 0.43516953249600193`}}, 
+           0.021528196942231848`]}, 
+         InsetBox["5", {1.40071491168215, 0.6523261905934384}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], Opacity[1], 
+          {Arrowheads[0.], 
+           ArrowBox[{{0.9341177427775514, 0.}, {0., 0.43502688266879386`}}, 
+            0.021528196942231848`]}}, 
+         InsetBox["4", {0.4670588713887757, 0.21751344133439693}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], Opacity[1], 
+          {Arrowheads[0.], 
+           ArrowBox[{{0.9341177427775514, 0.}, {1.8676183598099563`, 
+            0.43516953249600193`}}, 0.021528196942231848`]}}, 
+         InsetBox["2", {1.400868051293754, 0.21758476624800097}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}}, 
+       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[
+        0.7]}], {
+         DiskBox[{0.933811463554344, 0.869482848690875}, 
+          0.021528196942231848], 
+         InsetBox["\<\"Helena\"\>", 
+          Offset[{2, 2}, {0.9553396604965758, 0.8910110456331068}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{0.9341177427775514, 0.}, 0.021528196942231848]}, 
+         InsetBox["\<\"Duluth\"\>", 
+          Offset[{2, 2}, {0.9556459397197833, 0.021528196942231848}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{0., 0.43502688266879386`}, 0.021528196942231848]}, 
+         InsetBox["\<\"Winnipeg\"\>", 
+          Offset[{2, 2}, {0.021528196942231848, 0.4565550796110257}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{1.8676183598099563`, 0.43516953249600193`}, 
+           0.021528196942231848]}, 
+         InsetBox["\<\"Omaha\"\>", 
+          Offset[{2, 2}, {1.8891465567521881, 0.4566977294382338}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{3.91976900914098*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"de7eb0a7-8c0d-184d-841e-f1794319ccf4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindShortestTour", "[", "test", "]"}]], "Input",
+ CellChangeTimes->{{3.919769120128662*^9, 3.9197691258898087`*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"d34a0ad4-a89a-c54c-8205-82aab1190d63"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"15", ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "4", ",", "2", ",", "3", ",", "1"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.9197691262317066`*^9},
+ CellLabel->"Out[21]=",ExpressionUUID->"4067f218-66cb-df4a-a7d9-4a977dea491d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HighlightGraph", "[", 
+  RowBox[{"test", ",", 
+   RowBox[{"PathGraph", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Helena\>\"", ",", " ", "\"\<Duluth\>\"", ",", " ", 
+       "\"\<Winnipeg\>\"", ",", " ", "\"\<Omaha\>\""}], "}"}], "[", 
+     RowBox[{"[", 
+      RowBox[{"%21", "[", 
+       RowBox[{"[", "2", "]"}], "]"}], "]"}], "]"}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.919769165519306*^9, 3.919769194881872*^9}, {
+  3.919769256851364*^9, 3.919769265466751*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"7697d2fa-a57c-b746-be9a-50be6bc5dded"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{"Helena", "Duluth", "Winnipeg", "Omaha"}, {
+      Null, {{1, 2}, {1, 3}, {3, 2}, {1, 4}, {4, 2}}}, {
+      EdgeLabels -> {"EdgeWeight"}, VertexLabels -> {"Name"}, GraphHighlight -> {
+         UndirectedEdge["Duluth", "Winnipeg"], 
+         UndirectedEdge["Helena", "Omaha"], "Duluth", 
+         UndirectedEdge["Omaha", "Duluth"], "Omaha", "Helena", 
+         UndirectedEdge["Winnipeg", "Helena"], "Winnipeg"}, 
+       EdgeWeight -> {6, 4, 4, 5, 2}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+         {Arrowheads[0.], 
+          ArrowBox[{{0.933811463554344, 0.869482848690875}, {
+           0.9341177427775514, 0.}}, 0.021528196942231848`]}, 
+         InsetBox["6", {0.9339646031659476, 0.4347414243454375}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], Opacity[1], 
+          {Arrowheads[0.], 
+           ArrowBox[{{0.933811463554344, 0.869482848690875}, {0., 
+            0.43502688266879386`}}, 0.021528196942231848`]}}, 
+         InsetBox["4", {0.466905731777172, 0.6522548656798344}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], Opacity[1], 
+          {Arrowheads[0.], 
+           ArrowBox[{{0.933811463554344, 0.869482848690875}, {
+            1.8676183598099563`, 0.43516953249600193`}}, 
+            0.021528196942231848`]}}, 
+         InsetBox["5", {1.40071491168215, 0.6523261905934384}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], Opacity[1], 
+          {Arrowheads[0.], 
+           ArrowBox[{{0.9341177427775514, 0.}, {0., 0.43502688266879386`}}, 
+            0.021528196942231848`]}}, 
+         InsetBox["4", {0.4670588713887757, 0.21751344133439693}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], Opacity[1], 
+          {Arrowheads[0.], 
+           ArrowBox[{{0.9341177427775514, 0.}, {1.8676183598099563`, 
+            0.43516953249600193`}}, 0.021528196942231848`]}}, 
+         InsetBox["2", {1.400868051293754, 0.21758476624800097}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}}, 
+       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{0.933811463554344, 0.869482848690875}, 
+           0.021528196942231848]}, 
+         InsetBox["\<\"Helena\"\>", 
+          Offset[{2, 2}, {0.9553396604965758, 0.8910110456331068}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{0.9341177427775514, 0.}, 0.021528196942231848]}, 
+         InsetBox["\<\"Duluth\"\>", 
+          Offset[{2, 2}, {0.9556459397197833, 0.021528196942231848}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{0., 0.43502688266879386`}, 0.021528196942231848]}, 
+         InsetBox["\<\"Winnipeg\"\>", 
+          Offset[{2, 2}, {0.021528196942231848, 0.4565550796110257}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{1.8676183598099563`, 0.43516953249600193`}, 
+           0.021528196942231848]}, 
+         InsetBox["\<\"Omaha\"\>", 
+          Offset[{2, 2}, {1.8891465567521881, 0.4566977294382338}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{3.919769184584076*^9, 3.919769272056246*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"6d8a620d-f8bc-e542-a91d-8a776e82f271"]
+}, Open  ]]
+},
+WindowSize->{718.5, 735},
+WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"df2dd7f0-684d-6f4c-8bfb-05891f3fe3c3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1404, 27, 219, "Input",ExpressionUUID->"65a1dca2-6852-354a-b068-39520b77d516"],
+Cell[1987, 51, 3346, 68, 188, "Output",ExpressionUUID->"4f3daa74-debf-574a-89ca-db6da2a93939"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5370, 124, 410, 8, 28, "Input",ExpressionUUID->"2497e5c1-ca5c-f144-b372-5d52f8b4c104"],
+Cell[5783, 134, 326, 7, 32, "Output",ExpressionUUID->"367b4cae-681a-6548-a1c1-43118c7fb12c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6146, 146, 1680, 43, 124, "Input",ExpressionUUID->"6e93e153-8ba0-cc43-9f35-431b06706f81"],
+Cell[7829, 191, 3686, 74, 188, "Output",ExpressionUUID->"de7eb0a7-8c0d-184d-841e-f1794319ccf4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11552, 270, 219, 3, 28, "Input",ExpressionUUID->"d34a0ad4-a89a-c54c-8205-82aab1190d63"],
+Cell[11774, 275, 279, 7, 32, "Output",ExpressionUUID->"4067f218-66cb-df4a-a7d9-4a977dea491d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12090, 287, 598, 14, 28, "Input",ExpressionUUID->"7697d2fa-a57c-b746-be9a-50be6bc5dded"],
+Cell[12691, 303, 3960, 78, 211, "Output",ExpressionUUID->"6d8a620d-f8bc-e542-a91d-8a776e82f271"]
+}, Open  ]]
+}
+]
+*)
+
