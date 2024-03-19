@@ -10,16 +10,2225 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     67371,       1476]
-NotebookOptionsPosition[     63633,       1402]
-NotebookOutlinePosition[     64039,       1418]
-CellTagsIndexPosition[     63996,       1415]
+NotebookDataLength[    173976,       3709]
+NotebookOptionsPosition[    168500,       3611]
+NotebookOutlinePosition[    168906,       3627]
+CellTagsIndexPosition[    168863,       3624]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"greenRoutes", " ", "=", " ", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<El Paso\>\"", ",", "\"\<Houston\>\"", ",", "6", ",", " ", 
+       "Green"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Portland\>\"", ",", "\"\<San Francisco\>\"", ",", "5", ",", " ", 
+       "Green"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Saint Louis\>\"", ",", "\"\<Pittsburgh\>\"", ",", " ", "5", ",", 
+       " ", "Green"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Helena\>\"", ",", "\"\<Denver\>\"", ",", "4", ",", " ", "Green"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Little Rock\>\"", ",", "\"\<New Orleans\>\"", ",", " ", "3", ",", 
+       " ", "Green"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Chicago\>\"", ",", "\"\<Saint Louis\>\"", ",", "2", ",", " ", 
+       "Green"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Pittsburgh\>\"", ",", " ", "\"\<New York\>\"", ",", "2", ",", " ", 
+       "Green"}], "}"}]}], "\[IndentingNewLine]", "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"pinkRoutes", " ", "=", " ", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Duluth\>\"", ",", "\"\<Toronto\>\"", ",", "6", ",", " ", "Pink"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Portland\>\"", ",", "\"\<San Francisco\>\"", ",", "5", ",", " ", 
+       "Pink"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Denver\>\"", ",", "\"\<Omaha\>\"", ",", "4", ",", " ", "Pink"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Charleston\>\"", ",", "\"\<Miami\>\"", ",", "4", ",", " ", 
+       "Pink"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<San Francisco\>\"", ",", "\"\<Los Angeles\>\"", ",", "3", ",", " ",
+        "Pink"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Helena\>\"", ",", "\"\<Salt Lake City\>\"", ",", "3", ",", " ", 
+       "Pink"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Kansas City\>\"", ",", "\"\<Saint Louis\>\"", ",", "2", ",", " ", 
+       "Pink"}], "}"}]}], "\[IndentingNewLine]", "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"blackRoutes", " ", "=", " ", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Los Angeles\>\"", ",", " ", "\"\<El Paso\>\"", ",", "6", ",", " ", 
+       "Black"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Sault St. Marie\>\"", ",", "\"\<Montreal\>\"", ",", "5", ",", " ", 
+       "Black"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Denver\>\"", ",", "\"\<Kansas City\>\"", ",", "4", ",", " ", 
+       "Black"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Winnipeg\>\"", ",", "\"\<Duluth\>\"", ",", "4", ",", " ", 
+       "Black"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Nashville\>\"", ",", "\"\<Raleigh\>\"", ",", "3", ",", " ", 
+       "Black"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Chicago\>\"", ",", "\"\<Pittsburgh\>\"", ",", "3", ",", " ", 
+       "Black"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<New York\>\"", ",", "\"\<Washington\>\"", ",", "2", ",", " ", 
+       "Black"}], "}"}]}], "\[IndentingNewLine]", "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"orangeRoutes", " ", "=", " ", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Helena\>\"", ",", "\"\<Duluth\>\"", ",", "6", ",", " ", "Orange"}],
+       "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<San Francisco\>\"", ",", "\"\<Salt Lake City\>\"", ",", "5", ",", 
+       " ", "Orange"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Denver\>\"", ",", " ", "\"\<Kansas City\>\"", ",", "4", ",", " ", 
+       "Orange"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<New Orleans\>\"", ",", "\"\<Atlanta\>\"", ",", "4", ",", " ", 
+       "Orange"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Las Vegas\>\"", ",", "\"\<Salt Lake City\>\"", ",", "3", ",", " ", 
+       "Orange"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Chicago\>\"", ",", "\"\<Pittsburgh\>\"", ",", "3", ",", " ", 
+       "Orange"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<New York\>\"", ",", "\"\<Washington\>\"", ",", "2", ",", " ", 
+       "Orange"}], "}"}]}], "\[IndentingNewLine]", "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"yellowRoutes", " ", "=", " ", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Seattle\>\"", ",", "\"\<Helena\>\"", ",", "6", ",", " ", 
+       "Yellow"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<El Paso\>\"", ",", "\"\<Oklahoma City\>\"", ",", "5", ",", " ", 
+       "Yellow"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<New Orleans\>\"", ",", "\"\<Atlanta\>\"", ",", "4", ",", " ", 
+       "Yellow"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Nashville\>\"", ",", "\"\<Pittsburgh\>\"", ",", "4", ",", " ", 
+       "Yellow"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<San Francisco\>\"", ",", "\"\<Los Angeles\>\"", ",", "3", ",", " ",
+        "Yellow"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Salt Lake City\>\"", ",", "\"\<Denver\>\"", ",", "3", ",", " ", 
+       "Yellow"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Boston\>\"", ",", "\"\<New York\>\"", ",", "2", ",", " ", 
+       "Yellow"}], "}"}]}], "\[IndentingNewLine]", "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"blueRoutes", " ", "=", " ", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Portland\>\"", ",", "\"\<Salt Lake City\>\"", ",", " ", "6", ",", 
+       " ", "Blue"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Atlanta\>\"", ",", "\"\<Miami\>\"", ",", "5", ",", " ", "Blue"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Helena\>\"", ",", "\"\<Winnipeg\>\"", ",", "4", ",", " ", "Blue"}],
+       "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Omaha\>\"", ",", " ", "\"\<Chicago\>\"", ",", "4", ",", " ", 
+       "Blue"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Santa Fe\>\"", ",", "\"\<Oklahoma City\>\"", ",", "3", ",", " ", 
+       "Blue"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Montreal\>\"", ",", "\"\<New York\>\"", ",", "3", ",", " ", 
+       "Blue"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Kansas City\>\"", ",", "\"\<Saint Louis\>\"", ",", "2", ",", " ", 
+       "Blue"}], "}"}]}], "\[IndentingNewLine]", "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"redRoutes", " ", "=", " ", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<New Orleans\>\"", ",", "\"\<Miami\>\"", ",", "6", ",", " ", 
+       "Red"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Helena\>\"", ",", "\"\<Omaha\>\"", ",", "5", ",", " ", "Red"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<El Paso\>\"", ",", "\"\<Dallas\>\"", ",", "4", ",", " ", "Red"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Denver\>\"", ",", "\"\<Oklahoma City\>\"", ",", "4", ",", " ", 
+       "Red"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Salt Lake City\>\"", ",", "\"\<Denver\>\"", ",", "3", ",", " ", 
+       "Red"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Duluth\>\"", ",", "\"\<Chicago\>\"", ",", "3", ",", " ", "Red"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Boston\>\"", ",", "\"\<New York\>\"", ",", "2", ",", " ", "Red"}], 
+      "}"}]}], "\[IndentingNewLine]", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"whiteRoutes", " ", "=", " ", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Calgary\>\"", ",", "\"\<Winnipeg\>\"", ",", "6", ",", " ", 
+       "Dashed"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<San Francisco\>\"", ",", "\"\<Salt Lake City\>\"", ",", "5", ",", 
+       " ", "Dashed"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Phoenix\>\"", ",", "\"\<Denver\>\"", ",", "5", ",", " ", 
+       "Dashed"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Chicago\>\"", ",", "\"\<Toronto\>\"", ",", "4", ",", " ", 
+       "Dashed"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Little Rock\>\"", ",", "\"\<Nashville\>\"", ",", "3", ",", " ", 
+       "Dashed"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Chicago\>\"", ",", "\"\<Saint Louis\>\"", ",", "2", ",", " ", 
+       "Dashed"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Pittsburgh\>\"", ",", " ", "\"\<New York\>\"", ",", "2", ",", " ", 
+       "Dashed"}], "}"}]}], "\[IndentingNewLine]", "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"greyRoutes", "=", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Winnipeg\>\"", ",", "\"\<Sault St. Marie\>\"", ",", "6", ",", 
+       "Gray"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Seattle\>\"", ",", "\"\<Calgary\>\"", ",", "4", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Calgary\>\"", ",", "\"\<Helena\>\"", ",", "4", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Vancouver\>\"", ",", "\"\<Calgary\>\"", ",", "3", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Los Angeles\>\"", ",", "\"\<Phoenix\>\"", ",", "3", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Sault St. Marie\>\"", ",", "\"\<Duluth\>\"", ",", "3", ",", 
+       "Gray"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Phoenix\>\"", ",", " ", "\"\<Santa Fe\>\"", ",", "3", ",", 
+       "Gray"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Phoenix\>\"", ",", "\"\<El Paso\>\"", ",", "3", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Toronto\>\"", ",", "\"\<Montreal\>\"", ",", "3", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Montreal\>\"", ",", "\"\<Boston\>\"", ",", "2", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Montreal\>\"", ",", "\"\<Boston\>\"", ",", "2", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Houston\>\"", ",", "\"\<New Orleans\>\"", ",", "2", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Dallas\>\"", ",", "\"\<Little Rock\>\"", ",", "2", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Oklahoma City\>\"", ",", "\"\<Little Rock\>\"", ",", "2", ",", 
+       "Gray"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Santa Fe\>\"", ",", "\"\<El Paso\>\"", ",", "2", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Los Angeles\>\"", ",", "\"\<Las Vegas\>\"", ",", "2", ",", 
+       "Gray"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Duluth\>\"", ",", "\"\<Omaha\>\"", ",", "2", ",", "Gray"}],
+       "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Duluth\>\"", ",", "\"\<Omaha\>\"", ",", "2", ",", "Gray"}],
+       "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Duluth\>\"", ",", "\"\<Sault St. Marie\>\"", ",", "2", ",", 
+       "Gray"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Kansas City\>\"", ",", "\"\<Oklahoma City\>\"", ",", "2", ",", 
+       "Gray"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Kansas City\>\"", ",", "\"\<Oklahoma City\>\"", ",", "2", ",", 
+       "Gray"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Oklahoma City\>\"", ",", "\"\<Dallas\>\"", ",", "2", ",", "Gray"}],
+       "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Oklahoma City\>\"", ",", "\"\<Dallas\>\"", ",", "2", ",", "Gray"}],
+       "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Little Rock\>\"", ",", "\"\<Saint Louis\>\"", ",", "2", ",", 
+       "Gray"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Saint Louis\>\"", ",", "\"\<Nashville\>\"", ",", "2", ",", 
+       "Gray"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Atlanta\>\"", ",", " ", "\"\<Charleston\>\"", ",", "2", ",", 
+       "Gray"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Atlanta\>\"", ",", "\"\<Raleigh\>\"", ",", "2", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Atlanta\>\"", ",", "\"\<Raleigh\>\"", ",", "2", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Raleigh\>\"", ",", " ", "\"\<Charleston\>\"", ",", "2", ",", 
+       "Gray"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Raleigh\>\"", ",", "\"\<Washington\>\"", ",", "2", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Raleigh\>\"", ",", "\"\<Washington\>\"", ",", "2", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Raleigh\>\"", ",", "\"\<Pittsburgh\>\"", ",", "2", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Pittsburgh\>\"", ",", "\"\<Washington\>\"", ",", "2", ",", 
+       "Gray"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Sault St. Marie\>\"", ",", "\"\<Toronto\>\"", ",", "2", ",", 
+       "Gray"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Pittsburgh\>\"", ",", "\"\<Toronto\>\"", ",", "2", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Nashville\>\"", ",", "\"\<Atlanta\>\"", ",", "1", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Dallas\>\"", ",", "\"\<Houston\>\"", ",", "1", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Dallas\>\"", ",", "\"\<Houston\>\"", ",", "1", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Omaha\>\"", ",", "\"\<Kansas City\>\"", ",", "1", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Omaha\>\"", ",", "\"\<Kansas City\>\"", ",", "1", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Seattle\>\"", ",", "\"\<Portland\>\"", ",", "1", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Seattle\>\"", ",", "\"\<Portland\>\"", ",", "1", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Vancouver\>\"", ",", "\"\<Seattle\>\"", ",", "1", ",", "Gray"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Vancouver\>\"", ",", "\"\<Seattle\>\"", ",", "1", ",", "Gray"}], 
+      "}"}]}], "\[IndentingNewLine]", "}"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.91980766338509*^9, 3.9198081666172504`*^9}, {
+   3.91980820252577*^9, 3.9198082171762676`*^9}, {3.919808259375086*^9, 
+   3.9198090084647617`*^9}, {3.919809051647053*^9, 3.919809198225725*^9}, {
+   3.9198092299445667`*^9, 3.9198092303187866`*^9}, {3.9198092612168007`*^9, 
+   3.9198094808886166`*^9}, {3.91980952160767*^9, 3.9198102197548084`*^9}, {
+   3.9198103163628006`*^9, 3.919810412401409*^9}, 3.9198104638924656`*^9, {
+   3.9198124154036884`*^9, 3.919812642966324*^9}, {3.9198127627409096`*^9, 
+   3.919812764021658*^9}},
+ CellLabel->
+  "In[116]:=",ExpressionUUID->"6491a09d-896c-624d-8ae9-e05e09ff396a"],
+
+Cell["\<\
+Notes:
+Green&White have a strange number of routes. 
+Only one blue route doubles up.\
+\>", "Text",
+ CellChangeTimes->{{3.9198090250398026`*^9, 3.9198090402307873`*^9}, {
+  3.9198094916547985`*^9, 
+  3.919809495758461*^9}},ExpressionUUID->"7a8414c5-56fd-0148-b17c-\
+3f7329889b73"],
 
 Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"edges", " ", "=", " ", 
+  RowBox[{"UndirectedEdge", "@@@", 
+   RowBox[{"greenRoutes", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", 
+      RowBox[{"1", ";;", "2"}]}], "]"}], "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"MapThread", "[", 
+  RowBox[{"Style", ",", 
+   RowBox[{"{", 
+    RowBox[{"edges", ",", " ", 
+     RowBox[{"greenRoutes", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "4"}], "]"}], "]"}]}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.919814208493059*^9, 3.9198142316479206`*^9}, {
+  3.919814328279545*^9, 3.9198144627755203`*^9}, {3.9198145170138817`*^9, 
+  3.919814538552273*^9}},
+ CellLabel->
+  "In[265]:=",ExpressionUUID->"457c5d6f-5141-0b47-b498-4ccd83db8907"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"\<\"El Paso\"\>", "\[UndirectedEdge]", "\<\"Houston\"\>"}], ",", 
+   RowBox[{"\<\"Portland\"\>", "\[UndirectedEdge]", "\<\"San Francisco\"\>"}],
+    ",", 
+   RowBox[{"\<\"Saint Louis\"\>", "\[UndirectedEdge]", "\<\"Pittsburgh\"\>"}],
+    ",", 
+   RowBox[{"\<\"Helena\"\>", "\[UndirectedEdge]", "\<\"Denver\"\>"}], ",", 
+   RowBox[{"\<\"Little Rock\"\>", 
+    "\[UndirectedEdge]", "\<\"New Orleans\"\>"}], ",", 
+   RowBox[{"\<\"Chicago\"\>", "\[UndirectedEdge]", "\<\"Saint Louis\"\>"}], 
+   ",", 
+   RowBox[{"\<\"Pittsburgh\"\>", "\[UndirectedEdge]", "\<\"New York\"\>"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.919814417665224*^9, 3.9198144630266647`*^9}, 
+   3.919814542399189*^9},
+ CellLabel->
+  "Out[265]=",ExpressionUUID->"332ad73d-e91a-9144-b83d-ed77ce5a3d3e"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   StyleBox[
+    RowBox[{"\<\"El Paso\"\>", "\[UndirectedEdge]", "\<\"Houston\"\>"}],
+    StripOnInput->False,
+    LineColor->RGBColor[0, 1, 0],
+    FrontFaceColor->RGBColor[0, 1, 0],
+    BackFaceColor->RGBColor[0, 1, 0],
+    GraphicsColor->RGBColor[0, 1, 0],
+    FontColor->RGBColor[0, 1, 0]], ",", 
+   StyleBox[
+    RowBox[{"\<\"Portland\"\>", "\[UndirectedEdge]", "\<\"San Francisco\"\>"}],
+    StripOnInput->False,
+    LineColor->RGBColor[0, 1, 0],
+    FrontFaceColor->RGBColor[0, 1, 0],
+    BackFaceColor->RGBColor[0, 1, 0],
+    GraphicsColor->RGBColor[0, 1, 0],
+    FontColor->RGBColor[0, 1, 0]], ",", 
+   StyleBox[
+    RowBox[{"\<\"Saint Louis\"\>", "\[UndirectedEdge]", "\<\"Pittsburgh\"\>"}],
+    StripOnInput->False,
+    LineColor->RGBColor[0, 1, 0],
+    FrontFaceColor->RGBColor[0, 1, 0],
+    BackFaceColor->RGBColor[0, 1, 0],
+    GraphicsColor->RGBColor[0, 1, 0],
+    FontColor->RGBColor[0, 1, 0]], ",", 
+   StyleBox[
+    RowBox[{"\<\"Helena\"\>", "\[UndirectedEdge]", "\<\"Denver\"\>"}],
+    StripOnInput->False,
+    LineColor->RGBColor[0, 1, 0],
+    FrontFaceColor->RGBColor[0, 1, 0],
+    BackFaceColor->RGBColor[0, 1, 0],
+    GraphicsColor->RGBColor[0, 1, 0],
+    FontColor->RGBColor[0, 1, 0]], ",", 
+   StyleBox[
+    RowBox[{"\<\"Little Rock\"\>", 
+     "\[UndirectedEdge]", "\<\"New Orleans\"\>"}],
+    StripOnInput->False,
+    LineColor->RGBColor[0, 1, 0],
+    FrontFaceColor->RGBColor[0, 1, 0],
+    BackFaceColor->RGBColor[0, 1, 0],
+    GraphicsColor->RGBColor[0, 1, 0],
+    FontColor->RGBColor[0, 1, 0]], ",", 
+   StyleBox[
+    RowBox[{"\<\"Chicago\"\>", "\[UndirectedEdge]", "\<\"Saint Louis\"\>"}],
+    StripOnInput->False,
+    LineColor->RGBColor[0, 1, 0],
+    FrontFaceColor->RGBColor[0, 1, 0],
+    BackFaceColor->RGBColor[0, 1, 0],
+    GraphicsColor->RGBColor[0, 1, 0],
+    FontColor->RGBColor[0, 1, 0]], ",", 
+   StyleBox[
+    RowBox[{"\<\"Pittsburgh\"\>", "\[UndirectedEdge]", "\<\"New York\"\>"}],
+    StripOnInput->False,
+    LineColor->RGBColor[0, 1, 0],
+    FrontFaceColor->RGBColor[0, 1, 0],
+    BackFaceColor->RGBColor[0, 1, 0],
+    GraphicsColor->RGBColor[0, 1, 0],
+    FontColor->RGBColor[0, 1, 0]]}], "}"}]], "Output",
+ CellChangeTimes->{{3.919814417665224*^9, 3.9198144630266647`*^9}, 
+   3.9198145424011974`*^9},
+ CellLabel->
+  "Out[266]=",ExpressionUUID->"11a5c486-c1a6-544b-8a6f-3b2e79a11b7e"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"constructGraph", "[", "data_", "]"}], ":=", 
+  RowBox[{"EdgeTaggedGraph", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"MapThread", "[", 
+     RowBox[{"Style", ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"UndirectedEdge", "@@@", 
+         RowBox[{"data", "[", 
+          RowBox[{"[", 
+           RowBox[{"All", ",", 
+            RowBox[{"1", ";;", "2"}]}], "]"}], "]"}]}], ",", 
+        RowBox[{"data", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "4"}], "]"}], "]"}]}], "}"}]}], "]"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"EdgeWeight", "->", 
+     RowBox[{"data", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "3"}], "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
+    RowBox[{"VertexLabels", "->", "\"\<Name\>\""}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"EdgeLabels", "->", "\"\<EdgeWeight\>\""}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.919811157658636*^9, 3.919811254304577*^9}, {
+  3.9198115511619396`*^9, 3.9198116321924324`*^9}, {3.9198126527622547`*^9, 
+  3.9198126657521133`*^9}, {3.919813002233036*^9, 3.9198130050567837`*^9}, {
+  3.919813190994276*^9, 3.919813199128685*^9}, {3.9198132677226124`*^9, 
+  3.919813291959774*^9}, {3.9198135526247997`*^9, 3.9198135584728184`*^9}, {
+  3.9198135965284653`*^9, 3.9198136233750076`*^9}, {3.919813658536005*^9, 
+  3.919813687064741*^9}, {3.9198138021799965`*^9, 3.919813835818659*^9}, {
+  3.919813914969799*^9, 3.919814026849127*^9}, {3.9198141028896446`*^9, 
+  3.9198141107217407`*^9}, {3.919814562401804*^9, 3.9198145993448105`*^9}, {
+  3.9198149793625183`*^9, 3.9198149812406445`*^9}},
+ CellLabel->
+  "In[286]:=",ExpressionUUID->"51b99ea6-7819-0541-8906-38c264c194d5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"greenGraph", " ", "=", " ", 
+  RowBox[{
+  "constructGraph", "[", "greenRoutes", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"pinkGraph", " ", "=", " ", 
+   RowBox[{"constructGraph", "[", "pinkRoutes", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"blackGraph", "=", " ", 
+   RowBox[{"constructGraph", "[", "blackRoutes", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"orangeGraph", " ", "=", " ", 
+   RowBox[{"constructGraph", "[", "orangeRoutes", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"yellowGraph", " ", "=", " ", 
+   RowBox[{"constructGraph", "[", "yellowRoutes", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"blueGraph", " ", "=", " ", 
+   RowBox[{"constructGraph", "[", "blueRoutes", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"redGraph", " ", "=", " ", 
+   RowBox[{"constructGraph", "[", "redRoutes", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"whiteGraph", " ", "=", " ", 
+   RowBox[{"constructGraph", "[", "whiteRoutes", " ", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"greyGraph", " ", "=", " ", 
+   RowBox[{"constructGraph", "[", "greyRoutes", "]"}]}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.919811260255663*^9, 3.91981128506398*^9}, {
+   3.9198113251540737`*^9, 3.919811448630541*^9}, {3.9198116040415287`*^9, 
+   3.9198117761847305`*^9}, {3.9198127231325493`*^9, 3.919812745104393*^9}, 
+   3.9198130156324177`*^9},
+ CellLabel->
+  "In[287]:=",ExpressionUUID->"73508130-e0ce-824a-b5ab-b318d8b40622"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{
+      "El Paso", "Houston", "Portland", "San Francisco", "Saint Louis", 
+       "Pittsburgh", "Helena", "Denver", "Little Rock", "New Orleans", 
+       "Chicago", "New York"}, {
+      Null, {{1, 2}, {3, 4}, {5, 6}, {7, 8}, {9, 10}, {11, 5}, {6, 12}}, {1, 
+       1, 1, 1, 1, 1, 1}}, {
+      EdgeLabels -> {"EdgeWeight"}, 
+       EdgeStyle -> {UndirectedEdge["Pittsburgh", "New York", 1] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["Helena", "Denver", 1] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["Portland", "San Francisco", 1] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["El Paso", "Houston", 1] -> {
+           RGBColor[0, 1, 0]}, 
+         UndirectedEdge["Little Rock", "New Orleans", 1] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["Saint Louis", "Pittsburgh", 1] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["Chicago", "Saint Louis", 1] -> {
+           RGBColor[0, 1, 0]}}, VertexLabels -> {"Name"}, 
+       EdgeWeight -> {6, 5, 5, 4, 3, 2, 2}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.848219656336142, -0.874640830985905}, {
+            1.8482196563361422`, -0.874640830985905}}, 0.03021604221127501]}},
+          InsetBox["6", {2.348219656336142, -0.874640830985905}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{1.1749281661971058`, -0.5247844985916932}, {
+            0.17492816619710583`, -0.5247844985916932}}, 
+            0.03021604221127501]}}, 
+         InsetBox["5", {0.6749281661971058, -0.5247844985916932}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{1.140318472461188, -0.17492816619710594`}, {
+            2.2052709723155504`, -0.17492816619720705`}}, 
+            0.03021604221127501]}}, 
+         InsetBox["5", {1.6727947223883692, -0.1749281661971565}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{1.140318472461188, -0.17492816619710594`}, {
+            0.17492816619710583`, -0.17492816619748125`}}, 
+            0.03021604221127501]}}, 
+         InsetBox["2", {0.6576233193291469, -0.1749281661972936}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.2052709723155504`, -0.17492816619720705`}, {
+            3.1716548140809673`, -0.17492816619744514`}}, 
+            0.03021604221127501]}}, 
+         InsetBox["2", {2.688462893198259, -0.1749281661973261}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.848219656336142, -0.5247844985916932}, {
+            1.8482196563361422`, -0.5247844985916932}}, 
+            0.03021604221127501]}}, 
+         InsetBox["4", {2.348219656336142, -0.5247844985916932}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{1.1749281661971058`, -0.874640830985905}, {
+            0.17492816619710583`, -0.874640830985905}}, 
+            0.03021604221127501]}}, 
+         InsetBox["3", {0.6749281661971058, -0.874640830985905}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}}, 
+       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[
+        0.7]}], {
+         DiskBox[{2.848219656336142, -0.874640830985905}, 
+          0.03021604221127501], 
+         InsetBox["\<\"El Paso\"\>", 
+          Offset[{2, 2}, {2.8784356985474173, -0.8444247887746299}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{1.8482196563361422`, -0.874640830985905}, 
+          0.03021604221127501], 
+         InsetBox["\<\"Houston\"\>", 
+          Offset[{2, 2}, {1.878435698547417, -0.8444247887746299}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{1.1749281661971058`, -0.5247844985916932}, 
+          0.03021604221127501], 
+         InsetBox["\<\"Portland\"\>", 
+          Offset[{2, 2}, {1.2051442084083808, -0.4945684563804182}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{0.17492816619710583`, -0.5247844985916932}, 
+          0.03021604221127501], 
+         InsetBox["\<\"San Francisco\"\>", 
+          Offset[{2, 2}, {0.20514420840838082, -0.4945684563804182}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{1.140318472461188, -0.17492816619710594`}, 
+          0.03021604221127501], 
+         InsetBox["\<\"Saint Louis\"\>", 
+          Offset[{2, 2}, {1.1705345146724628, -0.14471212398583094}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{2.2052709723155504`, -0.17492816619720705`}, 
+          0.03021604221127501], 
+         InsetBox["\<\"Pittsburgh\"\>", 
+          Offset[{2, 2}, {2.2354870145268255, -0.14471212398593203}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{2.848219656336142, -0.5247844985916932}, 
+          0.03021604221127501], 
+         InsetBox["\<\"Helena\"\>", 
+          Offset[{2, 2}, {2.8784356985474173, -0.4945684563804182}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{1.8482196563361422`, -0.5247844985916932}, 
+          0.03021604221127501], 
+         InsetBox["\<\"Denver\"\>", 
+          Offset[{2, 2}, {1.878435698547417, -0.4945684563804182}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{1.1749281661971058`, -0.874640830985905}, 
+          0.03021604221127501], 
+         InsetBox["\<\"Little Rock\"\>", 
+          Offset[{2, 2}, {1.2051442084083808, -0.8444247887746299}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{0.17492816619710583`, -0.874640830985905}, 
+          0.03021604221127501], 
+         InsetBox["\<\"New Orleans\"\>", 
+          Offset[{2, 2}, {0.20514420840838082, -0.8444247887746299}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{0.17492816619710583`, -0.17492816619748125`}, 
+          0.03021604221127501], 
+         InsetBox["\<\"Chicago\"\>", 
+          Offset[{2, 2}, {0.20514420840838082, -0.14471212398620625}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{3.1716548140809673`, -0.17492816619744514`}, 
+          0.03021604221127501], 
+         InsetBox["\<\"New York\"\>", 
+          Offset[{2, 2}, {3.2018708562922424, -0.14471212398617012}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{
+  3.919813015994938*^9, 3.9198132026452465`*^9, 3.9198136979182167`*^9, 
+   3.919813815113695*^9, {3.9198139183124733`*^9, 3.919814031258438*^9}, 
+   3.919814126630745*^9, 3.919814604496006*^9, 3.9198149837044106`*^9},
+ CellLabel->
+  "Out[287]=",ExpressionUUID->"d65c4835-91a7-b74f-81c3-5a307d26dde4"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"masterGraph", " ", "=", " ", 
+  RowBox[{"constructGraph", "[", "\[IndentingNewLine]", 
+   RowBox[{"Join", "[", "\[IndentingNewLine]", 
+    RowBox[{
+    "greenRoutes", ",", "pinkRoutes", ",", "blackRoutes", ",", "orangeRoutes",
+      ",", "\[IndentingNewLine]", "yellowRoutes", ",", "blueRoutes", ",", 
+     "redRoutes", ",", "whiteRoutes", ",", "greyRoutes"}], 
+    "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.919811557781435*^9, 3.9198115590797844`*^9}, {
+  3.919811808439789*^9, 3.919811913949747*^9}, {3.919812147442196*^9, 
+  3.919812174720669*^9}, {3.919812244344589*^9, 3.9198122624803944`*^9}, {
+  3.919812810856001*^9, 3.919812896420246*^9}, {3.91981504699448*^9, 
+  3.919815049721142*^9}},
+ CellLabel->
+  "In[297]:=",ExpressionUUID->"2e14df8f-fb35-754d-bc58-dacd14d1648c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindShortestPath", "[", 
+  RowBox[{"masterGraph", ",", "\"\<Vancouver\>\"", ",", "\"\<Miami\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.919815054420719*^9, 3.9198150741773224`*^9}},
+ CellLabel->
+  "In[298]:=",ExpressionUUID->"63a5dcfd-fcd7-1540-98a1-1abdf23fc3d4"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Vancouver\"\>", ",", "\<\"Seattle\"\>", ",", "\<\"Helena\"\>", 
+   ",", "\<\"Omaha\"\>", ",", "\<\"Kansas City\"\>", 
+   ",", "\<\"Saint Louis\"\>", ",", "\<\"Nashville\"\>", 
+   ",", "\<\"Atlanta\"\>", ",", "\<\"Miami\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.9198150748298492`*^9},
+ CellLabel->
+  "Out[298]=",ExpressionUUID->"2d4248eb-eeff-c545-93cc-a068de991ef8"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{
+      "El Paso", "Houston", "Portland", "San Francisco", "Saint Louis", 
+       "Pittsburgh", "Helena", "Denver", "Little Rock", "New Orleans", 
+       "Chicago", "New York", "Duluth", "Toronto", "Omaha", "Charleston", 
+       "Miami", "Los Angeles", "Salt Lake City", "Kansas City", 
+       "Sault St. Marie", "Montreal", "Winnipeg", "Nashville", "Raleigh", 
+       "Washington", "Atlanta", "Las Vegas", "Seattle", "Oklahoma City", 
+       "Boston", "Santa Fe", "Dallas", "Calgary", "Phoenix", "Vancouver"}, {
+      Null, {{1, 2}, {3, 4}, {5, 6}, {7, 8}, {9, 10}, {11, 5}, {6, 12}, {13, 
+       14}, {3, 4}, {8, 15}, {16, 17}, {4, 18}, {7, 19}, {20, 5}, {18, 1}, {
+       21, 22}, {8, 20}, {23, 13}, {24, 25}, {11, 6}, {12, 26}, {7, 13}, {4, 
+       19}, {8, 20}, {10, 27}, {28, 19}, {11, 6}, {12, 26}, {29, 7}, {1, 
+       30}, {10, 27}, {24, 6}, {4, 18}, {19, 8}, {31, 12}, {3, 19}, {27, 
+       17}, {7, 23}, {15, 11}, {32, 30}, {22, 12}, {20, 5}, {10, 17}, {7, 
+       15}, {1, 33}, {8, 30}, {19, 8}, {13, 11}, {31, 12}, {34, 23}, {4, 
+       19}, {35, 8}, {11, 14}, {9, 24}, {11, 5}, {6, 12}, {23, 21}, {29, 
+       34}, {34, 7}, {36, 34}, {18, 35}, {21, 13}, {35, 32}, {35, 1}, {14, 
+       22}, {22, 31}, {22, 31}, {2, 10}, {33, 9}, {30, 9}, {32, 1}, {18, 
+       28}, {13, 15}, {13, 15}, {13, 21}, {20, 30}, {20, 30}, {30, 33}, {30, 
+       33}, {9, 5}, {5, 24}, {27, 16}, {27, 25}, {27, 25}, {25, 16}, {25, 
+       26}, {25, 26}, {25, 6}, {6, 26}, {21, 14}, {6, 14}, {24, 27}, {33, 
+       2}, {33, 2}, {15, 20}, {15, 20}, {29, 3}, {29, 3}, {36, 29}, {36, 
+       29}}, {1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+       1, 1, 2, 1, 1, 2, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1,
+        1, 2, 1, 2, 1, 2, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 
+       1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1,
+        1, 2, 1, 2, 1, 2, 1, 2}}, {
+      EdgeLabels -> {"EdgeWeight"}, 
+       EdgeStyle -> {UndirectedEdge["Duluth", "Toronto", 1] -> {
+           RGBColor[1, 0.5, 0.5]}, 
+         UndirectedEdge["San Francisco", "Salt Lake City", 1] -> {
+           RGBColor[1, 0.5, 0]}, 
+         UndirectedEdge["Little Rock", "New Orleans", 1] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["Seattle", "Helena", 1] -> {
+           RGBColor[1, 1, 0]}, 
+         UndirectedEdge["Winnipeg", "Sault St. Marie", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Winnipeg", "Duluth", 1] -> {
+           GrayLevel[0]}, UndirectedEdge["Nashville", "Raleigh", 1] -> {
+           GrayLevel[0]}, UndirectedEdge["Little Rock", "Nashville", 1] -> {
+           Dashing[{Small, Small}]}, 
+         UndirectedEdge["San Francisco", "Los Angeles", 1] -> {
+           RGBColor[1, 0.5, 0.5]}, UndirectedEdge["Santa Fe", "El Paso", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Duluth", "Omaha", 2] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Vancouver", "Calgary", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Duluth", "Chicago", 1] -> {
+           RGBColor[1, 0, 0]}, 
+         UndirectedEdge["Portland", "Salt Lake City", 1] -> {
+           RGBColor[0, 0, 1]}, UndirectedEdge["Seattle", "Calgary", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Sault St. Marie", "Montreal", 1] -> {
+           GrayLevel[0]}, UndirectedEdge["New Orleans", "Atlanta", 2] -> {
+           RGBColor[1, 1, 0]}, UndirectedEdge["Chicago", "Pittsburgh", 2] -> {
+           RGBColor[1, 0.5, 0]}, UndirectedEdge["Dallas", "Houston", 2] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Sault St. Marie", "Toronto", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Atlanta", "Charleston", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Chicago", "Pittsburgh", 1] -> {
+           GrayLevel[0]}, UndirectedEdge["Saint Louis", "Pittsburgh", 1] -> {
+           RGBColor[0, 1, 0]}, 
+         UndirectedEdge["Kansas City", "Oklahoma City", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Helena", "Duluth", 1] -> {
+           RGBColor[1, 0.5, 0]}, 
+         UndirectedEdge["Santa Fe", "Oklahoma City", 1] -> {
+           RGBColor[0, 0, 1]}, UndirectedEdge["Denver", "Kansas City", 2] -> {
+           RGBColor[1, 0.5, 0]}, 
+         UndirectedEdge["Las Vegas", "Salt Lake City", 1] -> {
+           RGBColor[1, 0.5, 0]}, UndirectedEdge["Nashville", "Atlanta", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Raleigh", "Washington", 2] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Nashville", "Pittsburgh", 1] -> {
+           RGBColor[1, 1, 0]}, UndirectedEdge["Denver", "Kansas City", 1] -> {
+           GrayLevel[0]}, UndirectedEdge["Denver", "Oklahoma City", 1] -> {
+           RGBColor[1, 0, 0]}, 
+         UndirectedEdge["Kansas City", "Saint Louis", 1] -> {
+           RGBColor[1, 0.5, 0.5]}, UndirectedEdge["Helena", "Winnipeg", 1] -> {
+           RGBColor[0, 0, 1]}, UndirectedEdge["Duluth", "Omaha", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Seattle", "Portland", 2] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Vancouver", "Seattle", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Pittsburgh", "New York", 1] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["Montreal", "Boston", 2] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Atlanta", "Miami", 1] -> {
+           RGBColor[0, 0, 1]}, UndirectedEdge["Los Angeles", "Phoenix", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Portland", "San Francisco", 2] -> {
+           RGBColor[1, 0.5, 0.5]}, UndirectedEdge["Omaha", "Chicago", 1] -> {
+           RGBColor[0, 0, 1]}, UndirectedEdge["Oklahoma City", "Dallas", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Phoenix", "Santa Fe", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["El Paso", "Dallas", 1] -> {
+           RGBColor[1, 0, 0]}, UndirectedEdge["Sault St. Marie", "Duluth", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Boston", "New York", 2] -> {
+           RGBColor[1, 0, 0]}, 
+         UndirectedEdge["Kansas City", "Saint Louis", 2] -> {
+           RGBColor[0, 0, 1]}, 
+         UndirectedEdge["San Francisco", "Salt Lake City", 2] -> {
+           Dashing[{Small, Small}]}, 
+         UndirectedEdge["Omaha", "Kansas City", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Chicago", "Toronto", 1] -> {
+           Dashing[{Small, Small}]}, 
+         UndirectedEdge["San Francisco", "Los Angeles", 2] -> {
+           RGBColor[1, 1, 0]}, UndirectedEdge["Calgary", "Helena", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Phoenix", "El Paso", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Montreal", "Boston", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Helena", "Salt Lake City", 1] -> {
+           RGBColor[1, 0.5, 0.5]}, UndirectedEdge["Seattle", "Portland", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Boston", "New York", 1] -> {
+           RGBColor[1, 1, 0]}, UndirectedEdge["Portland", "San Francisco", 1] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["Dallas", "Houston", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Omaha", "Kansas City", 2] -> {
+           GrayLevel[0.5]}, UndirectedEdge["New York", "Washington", 2] -> {
+           RGBColor[1, 0.5, 0]}, UndirectedEdge["Raleigh", "Washington", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Los Angeles", "El Paso", 1] -> {
+           GrayLevel[0]}, UndirectedEdge["Oklahoma City", "Little Rock", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Pittsburgh", "Washington", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Oklahoma City", "Dallas", 2] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Charleston", "Miami", 1] -> {
+           RGBColor[1, 0.5, 0.5]}, UndirectedEdge["Toronto", "Montreal", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Raleigh", "Pittsburgh", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["New Orleans", "Atlanta", 1] -> {
+           RGBColor[1, 0.5, 0]}, 
+         UndirectedEdge["Salt Lake City", "Denver", 2] -> {
+           RGBColor[1, 0, 0]}, UndirectedEdge["Chicago", "Saint Louis", 1] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["Chicago", "Saint Louis", 2] -> {
+           Dashing[{Small, Small}]}, 
+         UndirectedEdge["New Orleans", "Miami", 1] -> {
+           RGBColor[1, 0, 0]}, UndirectedEdge["Denver", "Omaha", 1] -> {
+           RGBColor[1, 0.5, 0.5]}, UndirectedEdge["Calgary", "Winnipeg", 1] -> {
+           Dashing[{Small, Small}]}, 
+         UndirectedEdge["El Paso", "Oklahoma City", 1] -> {
+           RGBColor[1, 1, 0]}, UndirectedEdge["Dallas", "Little Rock", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Phoenix", "Denver", 1] -> {
+           Dashing[{Small, Small}]}, 
+         UndirectedEdge["New York", "Washington", 1] -> {
+           GrayLevel[0]}, UndirectedEdge["Kansas City", "Oklahoma City", 2] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Los Angeles", "Las Vegas", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Atlanta", "Raleigh", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Salt Lake City", "Denver", 1] -> {
+           RGBColor[1, 1, 0]}, UndirectedEdge["El Paso", "Houston", 1] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["Raleigh", "Charleston", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Pittsburgh", "Toronto", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Vancouver", "Seattle", 2] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Montreal", "New York", 1] -> {
+           RGBColor[0, 0, 1]}, UndirectedEdge["Helena", "Denver", 1] -> {
+           RGBColor[0, 1, 0]}, 
+         UndirectedEdge["Little Rock", "Saint Louis", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Saint Louis", "Nashville", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Pittsburgh", "New York", 2] -> {
+           Dashing[{Small, Small}]}, UndirectedEdge["Atlanta", "Raleigh", 2] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Houston", "New Orleans", 1] -> {
+           GrayLevel[0.5]}, UndirectedEdge["Helena", "Omaha", 1] -> {
+           RGBColor[1, 0, 0]}, UndirectedEdge["Duluth", "Sault St. Marie", 2] -> {
+           GrayLevel[0.5]}}, VertexLabels -> {"Name"}, 
+       GraphHighlight -> {
+        "Miami", "Saint Louis", "Seattle", "Nashville", "Kansas City", 
+         "Atlanta", "Helena", "Vancouver", "Omaha"}, 
+       EdgeWeight -> {6, 5, 5, 4, 3, 2, 2, 6, 5, 4, 4, 3, 3, 2, 6, 5, 4, 4, 3,
+         3, 2, 6, 5, 4, 4, 3, 3, 2, 6, 5, 4, 4, 3, 3, 2, 6, 5, 4, 4, 3, 3, 2, 
+        6, 5, 4, 4, 3, 3, 2, 6, 5, 5, 4, 3, 2, 2, 6, 4, 4, 3, 3, 3, 3, 3, 3, 
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+        2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{3.7555056188954086`, 4.689157078753341}, {
+            2.4743935726659667`, 4.95069690939933}}, 0.04944350107474975]}}, 
+         InsetBox["6", {3.1149495957806876, 4.819926994076336}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{3.7555056188954086`, 4.689157078753341}, {
+            5.131360619258414, 4.346329186650893}}, 0.04944350107474975]}}, 
+         InsetBox["6", {4.443433119076912, 4.517743132702117}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{3.7555056188954086`, 4.689157078753341}, {
+            3.4380526898477863`, 4.023427922410618}}, 0.04944350107474975]}}, 
+         InsetBox["5", {3.5967791543715975, 4.356292500581979}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{3.7555056188954086`, 4.689157078753341}, {
+            4.096872973167721, 4.852830693686762}}, 0.04944350107474975]}}, 
+         InsetBox["2", {3.9261892960315645, 4.770993886220052}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{3.7555056188954086`, 4.689157078753341}, {
+            2.9011268186368313`, 4.58612015377111}}, 0.04944350107474975]}}, 
+         InsetBox["4", {3.32831621876612, 4.637638616262226}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{3.7555056188954086`, 4.689157078753341}, {
+            4.462808568173808, 4.28218443243923}}, 0.04944350107474975]}}, 
+         InsetBox["3", {4.109157093534608, 4.485670755596286}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.4743935726659667`, 4.95069690939933}, {
+            1.3159630418399095`, 4.418066067357397}}, 0.04944350107474975]}}, 
+         InsetBox["2", {1.8951783072529382, 4.684381488378364}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{2.4743935726659667`, 4.95069690939933}, {
+             2.7477114697524345`, 4.838580865400586}, {2.9011268186368313`, 
+             4.58612015377111}}], 0.04944350107474975]}}, 
+         InsetBox["1", {2.713280568545375, 4.7982798588031805}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{2.4743935726659667`, 4.95069690939933}, {
+             2.6278089215502702`, 4.698236197769888}, {2.9011268186368313`, 
+             4.58612015377111}}], 0.04944350107474975]}}, 
+         InsetBox["1", {2.662239822757424, 4.73853720436726}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{6.189316169278343, 2.6050773665595557`}, {
+             5.9293020939022, 3.0212840697657435`}, {5.967090037000238, 
+             3.510576835443061}}], 0.04944350107474975]}}, 
+         InsetBox["5", {6.014818140317446, 3.042271271741841}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0.5, 0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{6.189316169278343, 2.6050773665595557`}, {
+             6.227104112376459, 3.0943701322367185`}, {5.967090037000238, 
+             3.510576835443061}}], 0.04944350107474975]}}, 
+         InsetBox["5", {6.141588065961137, 3.0733829302607756}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 0, 1], 
+          {Arrowheads[0.], 
+           ArrowBox[{{6.189316169278343, 2.6050773665595557`}, {
+            5.441364290312915, 2.976818759997934}}, 0.04944350107474975]}}, 
+         InsetBox["6", {5.815340229795629, 2.790948063278745}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{6.189316169278343, 2.6050773665595557`}, {
+             6.166772123105514, 2.05686163111061}, {5.823229141200094, 
+             1.6290451445241025`}}], 0.04944350107474975]}}, 
+         InsetBox["1", {6.074594910781701, 2.0914351635763517}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{6.189316169278343, 2.6050773665595557`}, {
+             5.845773187372897, 2.177260879972986}, {5.823229141200094, 
+             1.6290451445241025`}}], 0.04944350107474975]}}, 
+         InsetBox["1", {5.937950399696737, 2.142687347507306}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0.5, 0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{5.967090037000238, 3.510576835443061}, {
+             5.411793587036581, 3.7910250411506023`}, {5.131360619258414, 
+             4.346329186650893}}], 0.04944350107474975]}}, 
+         InsetBox["3", {5.490722663544778, 3.8699519518050494}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{5.967090037000238, 3.510576835443061}, {
+             5.686657069222076, 4.065880980943267}, {5.131360619258414, 
+             4.346329186650893}}], 0.04944350107474975]}}, 
+         InsetBox["3", {5.607727992713875, 3.986954070288906}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0.5, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{5.967090037000238, 3.510576835443061}, {
+             5.7919987403975215`, 3.157247063121624}, {5.441364290312915, 
+             2.976818759997934}}], 0.04944350107474975]}}, 
+         InsetBox["5", {5.741590228937736, 3.206896995452385}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Dashing[{Small, Small}], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{5.967090037000238, 3.510576835443061}, {
+             5.6164555869153, 3.3301485323191047`}, {5.441364290312915, 
+             2.976818759997934}}], 0.04944350107474975]}}, 
+         InsetBox["5", {5.666864098375418, 3.2804985999886096}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.2329166199935107`, 2.767470722330094}, {
+            1.58323971420642, 1.9457542289683638`}}, 0.04944350107474975]}}, 
+         InsetBox["5", {1.9080781670999654, 2.3566124756492286}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.2329166199935107`, 2.767470722330094}, {
+            2.1998361406131504`, 3.8446622230201255`}}, 
+            0.04944350107474975]}}, 
+         InsetBox["2", {2.2163763803033305, 3.3060664726751097}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{2.2329166199935107`, 2.767470722330094}, {
+             2.616646527752303, 2.398101992929273}, {2.706224895446542, 
+             1.8730709306016093`}}], 0.04944350107474975]}}, 
+         InsetBox["2", {2.5321787431410208, 2.353402405747564}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Dashing[{Small, Small}], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{2.2329166199935107`, 2.767470722330094}, {
+             2.3224949876877874`, 2.2424396600024115`}, {2.706224895446542, 
+             1.8730709306016093`}}], 0.04944350107474975]}}, 
+         InsetBox["2", {2.4069627722990328, 2.2871392471841396}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0.5, 0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{2.2329166199935107`, 2.767470722330094}, {
+             2.75013513371279, 3.100081798808718}, {3.3638118411521054`, 
+             3.0607623649809863`}}], 0.04944350107474975]}}, 
+         InsetBox["2", {2.777833815587246, 2.9932792091366416}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 0, 1], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{2.2329166199935107`, 2.767470722330094}, {
+             2.84659332743286, 2.7281512885024037`}, {3.3638118411521054`, 
+             3.0607623649809863`}}], 0.04944350107474975]}}, 
+         InsetBox["2", {2.8188946455583705, 2.8349538781744386}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.2329166199935107`, 2.767470722330094}, {
+            1.37669374803983, 3.0249965137334343`}}, 0.04944350107474975]}}, 
+         InsetBox["2", {1.8048051840166703, 2.896233618031764}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{1.58323971420642, 1.9457542289683638`}, {
+             2.156684400717648, 2.0940771020636757`}, {2.706224895446542, 
+             1.8730709306016093`}}], 0.04944350107474975]}}, 
+         InsetBox["3", {2.1498201357121536, 1.9880215424717953}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0.5, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{1.58323971420642, 1.9457542289683638`}, {
+             2.1327802089353174`, 1.7247480575062923`}, {2.706224895446542, 
+             1.8730709306016093`}}], 0.04944350107474975]}}, 
+         InsetBox["3", {2.139644473940808, 1.830803617098178}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{1.58323971420642, 1.9457542289683638`}, {
+             1.5751675664144353`, 1.3484183061662534`}, {1.2141155477600132`, 
+             0.8724804908316921}}], 0.04944350107474975]}}, 
+         InsetBox["2", {1.4738067926527836, 1.3832786682487797}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Dashing[{Small, Small}], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{1.58323971420642, 1.9457542289683638`}, {
+             1.222187695552002, 1.4698164136338192`}, {1.2141155477600132`, 
+             0.8724804908316921}}], 0.04944350107474975]}}, 
+         InsetBox["2", {1.3235484693136497, 1.4349560515512763}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{1.58323971420642, 1.9457542289683638`}, {
+            2.5078512404872617`, 1.1344662581636034`}}, 
+            0.04944350107474975]}}, 
+         InsetBox["2", {2.045545477346841, 1.5401102435659837}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{1.58323971420642, 1.9457542289683638`}, {
+            1.37669374803983, 3.0249965137334343`}}, 0.04944350107474975]}}, 
+         InsetBox["4", {1.479966731123125, 2.485375371350899}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{1.58323971420642, 1.9457542289683638`}, {
+            0.6527119586839247, 2.6815252765797495`}}, 0.04944350107474975]}},
+          InsetBox["2", {1.1179758364451724, 2.3136397527740566}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{1.58323971420642, 1.9457542289683638`}, {
+            0.7453692318797582, 1.6810681950290491`}}, 0.04944350107474975]}},
+          InsetBox["2", {1.1643044730430891, 1.8134112119987065}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{4.723176409969607, 1.9248471112522871`}, {
+            4.302964403818929, 3.1178205844622564`}}, 0.04944350107474975]}}, 
+         InsetBox["4", {4.513070406894268, 2.5213338478572718}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0.5, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{4.723176409969607, 1.9248471112522871`}, {
+            3.575863499106424, 1.3820329910402973`}}, 0.04944350107474975]}}, 
+         InsetBox["6", {4.1495199545380155, 1.6534400511462923}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{4.723176409969607, 1.9248471112522871`}, {
+            3.771655167088725, 2.229137624845073}}, 0.04944350107474975]}}, 
+         InsetBox["5", {4.247415788529166, 2.07699236804868}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0.5, 0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{4.723176409969607, 1.9248471112522871`}, {
+            5.441364290312915, 2.976818759997934}}, 0.04944350107474975]}}, 
+         InsetBox["3", {5.082270350141261, 2.450832935625111}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 0, 1], 
+          {Arrowheads[0.], 
+           ArrowBox[{{4.723176409969607, 1.9248471112522871`}, {
+            4.293510476262698, 0.9913464921662218}}, 0.04944350107474975]}}, 
+         InsetBox["4", {4.508343443116153, 1.4580968017092544}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{4.723176409969607, 1.9248471112522871`}, {
+            5.823229141200094, 1.6290451445241025`}}, 0.04944350107474975]}}, 
+         InsetBox["6", {5.273202775584851, 1.7769461278881948}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{4.723176409969607, 1.9248471112522871`}, {
+            5.324496828648252, 1.1207248384589361`}}, 0.04944350107474975]}}, 
+         InsetBox["4", {5.02383661930893, 1.5227859748556116}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0.5, 0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{4.302964403818929, 3.1178205844622564`}, {
+            3.771655167088725, 2.229137624845073}}, 0.04944350107474975]}}, 
+         InsetBox["4", {4.037309785453827, 2.673479104653665}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{4.302964403818929, 3.1178205844622564`}, {
+             4.895350792435021, 3.2345190001583597`}, {5.441364290312915, 
+             2.976818759997934}}], 0.04944350107474975]}}, 
+         InsetBox["3", {4.8820344747784254, 3.1270076642846747}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{4.302964403818929, 3.1178205844622564`}, {
+             4.848977901696863, 2.860120344301868}, {5.441364290312915, 
+             2.976818759997934}}], 0.04944350107474975]}}, 
+         InsetBox["3", {4.862294219353419, 2.9676316801755163}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{4.302964403818929, 3.1178205844622564`}, {
+             3.8427708187299348`, 2.9348565255977253`}, {3.3638118411521054`, 
+             3.0607623649809863`}}], 0.04944350107474975]}}, 
+         InsetBox["4", {3.837382197849206, 3.023550795334944}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0.5, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{4.302964403818929, 3.1178205844622564`}, {
+             3.824005426241103, 3.2437264238455126`}, {3.3638118411521054`, 
+             3.0607623649809863`}}], 0.04944350107474975]}}, 
+         InsetBox["4", {3.829394047121828, 3.155032154108299}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{4.302964403818929, 3.1178205844622564`}, {
+            3.4380526898477863`, 4.023427922410618}}, 0.04944350107474975]}}, 
+         InsetBox["4", {3.8705085468333573, 3.570624253436437}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Dashing[{Small, Small}], 
+          {Arrowheads[0.], 
+           ArrowBox[{{4.302964403818929, 3.1178205844622564`}, {
+            4.462808568173808, 4.28218443243923}}, 0.04944350107474975]}}, 
+         InsetBox["5", {4.3828864859963685, 3.7000025084507433}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.1998361406131504`, 3.8446622230201255`}, {
+            1.3159630418399095`, 4.418066067357397}}, 0.04944350107474975]}}, 
+         InsetBox["3", {1.75789959122653, 4.131364145188761}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Dashing[{Small, Small}], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.1998361406131504`, 3.8446622230201255`}, {
+            1.37669374803983, 3.0249965137334343`}}, 0.04944350107474975]}}, 
+         InsetBox["3", {1.7882649443264902, 3.43482936837678}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.1998361406131504`, 3.8446622230201255`}, {
+            3.4380526898477863`, 4.023427922410618}}, 0.04944350107474975]}}, 
+         InsetBox["2", {2.8189444152304683, 3.9340450727153717}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.1998361406131504`, 3.8446622230201255`}, {
+            2.9011268186368313`, 4.58612015377111}}, 0.04944350107474975]}}, 
+         InsetBox["2", {2.550481479624991, 4.215391188395618}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{1.3159630418399095`, 4.418066067357397}, {
+            0.29694428387707417`, 4.243487303063811}}, 0.04944350107474975]}},
+          InsetBox["6", {0.8064536628584918, 4.330776685210604}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0.5, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{1.3159630418399095`, 4.418066067357397}, {
+             1.099562317857953, 3.9159708988004387`}, {0.6273810904908217, 
+             3.6403375913967477`}}], 0.04944350107474975]}}, 
+         InsetBox["4", {1.026113059482611, 3.9810010927826363}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{1.3159630418399095`, 4.418066067357397}, {
+             0.843781814472794, 4.1424327599537145`}, {0.6273810904908217, 
+             3.6403375913967477`}}], 0.04944350107474975]}}, 
+         InsetBox["4", {0.9172310728481201, 4.077402565971508}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.706224895446542, 1.8730709306016093`}, {
+            3.575863499106424, 1.3820329910402973`}}, 0.04944350107474975]}}, 
+         InsetBox["3", {3.141044197276483, 1.6275519608209534}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Dashing[{Small, Small}], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.706224895446542, 1.8730709306016093`}, {
+            2.5078512404872617`, 1.1344662581636034`}}, 
+            0.04944350107474975]}}, 
+         InsetBox["4", {2.6070380679669016, 1.5037685943826062}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 0, 1], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.706224895446542, 1.8730709306016093`}, {
+            3.771655167088725, 2.229137624845073}}, 0.04944350107474975]}}, 
+         InsetBox["4", {3.2389400312676333, 2.0511042777233413}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 0, 1], 
+          {Arrowheads[0.], 
+           ArrowBox[{{1.2141155477600132`, 0.8724804908316921}, {
+            2.0257048984500163`, 0.3853017541917372}}, 0.04944350107474975]}},
+          InsetBox["3", {1.6199102231050149, 0.6288911225117146}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{1.2141155477600132`, 0.8724804908316921}, {
+             0.8467776235785921, 1.199693348507686}, {0.7453692318797582, 
+             1.6810681950290491`}}], 0.04944350107474975]}}, 
+         InsetBox["2", {0.9231412505260708, 1.2439621008187527}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0.5, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{1.2141155477600132`, 0.8724804908316921}, {
+             1.1127071560611874`, 1.3538553373530562`}, {0.7453692318797582, 
+             1.6810681950290491`}}], 0.04944350107474975]}}, 
+         InsetBox["2", {1.0363435291137009, 1.3095865850419885}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{1.2141155477600132`, 0.8724804908316921}, {
+             1.3735541515372736`, 0.44149158173315234`}, {1.2460500676844177`,
+              0.}}], 0.04944350107474975]}}, 
+         InsetBox["2", {1.291156442080434, 0.4384756618105544}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{1.2141155477600132`, 0.8724804908316921}, {
+             1.0866114639071616`, 0.4309889090985354}, {1.2460500676844177`, 
+             0.}}], 0.04944350107474975]}}, 
+         InsetBox["2", {1.169009173363997, 0.43400482902113763}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0.5, 0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{3.575863499106424, 1.3820329910402973`}, {
+            2.5078512404872617`, 1.1344662581636034`}}, 
+            0.04944350107474975]}}, 
+         InsetBox["6", {3.041857369796843, 1.2582496246019503}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{3.575863499106424, 1.3820329910402973`}, {
+             3.534460814172428, 1.8377814361179212`}, {3.771655167088725, 
+             2.229137624845073}}], 0.04944350107474975]}}, 
+         InsetBox["2", {3.6144620087312402, 1.8192907247014465}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{3.575863499106424, 1.3820329910402973`}, {
+             3.8130578520227045`, 1.7733891797673853`}, {3.771655167088725, 
+             2.229137624845073}}], 0.04944350107474975]}}, 
+         InsetBox["2", {3.7330566574639086, 1.791879891183924}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{3.575863499106424, 1.3820329910402973`}, {
+             3.4863367135895684`, 0.9396962882489158}, {3.1517325121918365`, 
+             0.6368484182410605}}], 0.04944350107474975]}}, 
+         InsetBox["3", {3.415960925745077, 0.9797515355566575}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{3.575863499106424, 1.3820329910402973`}, {
+             3.241259297708701, 1.0791851210324424`}, {3.1517325121918365`, 
+             0.6368484182410605}}], 0.04944350107474975]}}, 
+         InsetBox["2", {3.311635085553184, 1.0391298737247}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{3.575863499106424, 1.3820329910402973`}, {
+            4.293510476262698, 0.9913464921662218}}, 0.04944350107474975]}}, 
+         InsetBox["4", {3.934686987684561, 1.1866897416032596}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.5078512404872617`, 1.1344662581636034`}, {
+            3.1517325121918365`, 0.6368484182410605}}, 0.04944350107474975]}},
+          InsetBox["2", {2.829791876339549, 0.885657338202332}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{2.5078512404872617`, 1.1344662581636034`}, {
+            2.0257048984500163`, 0.3853017541917372}}, 0.04944350107474975]}},
+          InsetBox["3", {2.2667780694686392, 0.7598840061776703}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{3.771655167088725, 2.229137624845073}, {
+             3.4309805104765245`, 2.5778839336623363`}, {3.3638118411521054`, 
+             3.0607623649809863`}}], 0.04944350107474975]}}, 
+         InsetBox["1", {3.509519772310902, 2.6164009620974666}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{3.771655167088725, 2.229137624845073}, {
+             3.704486497764264, 2.7120160561637596`}, {3.3638118411521054`, 
+             3.0607623649809863`}}], 0.04944350107474975]}}, 
+         InsetBox["1", {3.6259472359299294, 2.6734990277285933}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0.5, 0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{0., 3.494026820671034}, {0.29694428387707417`, 
+            4.243487303063811}}, 0.04944350107474975]}}, 
+         InsetBox["4", {0.14847214193853708, 3.8687570618674227}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{0., 3.494026820671034}, {0.6527119586839247, 
+            2.6815252765797495`}}, 0.04944350107474975]}}, 
+         InsetBox["2", {0.32635597934196237, 3.0877760486253916}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{0., 3.494026820671034}, {0.6273810904908217, 
+            3.6403375913967477`}}, 0.04944350107474975]}}, 
+         InsetBox["2", {0.31369054524541085, 3.567182206033891}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 0, 1], 
+          {Arrowheads[0.], 
+           ArrowBox[{{0.29694428387707417`, 4.243487303063811}, {
+            0.6273810904908217, 3.6403375913967477`}}, 0.04944350107474975]}},
+          InsetBox["5", {0.46216268718394793, 3.94191244723028}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{5.131360619258414, 4.346329186650893}, {
+            5.856476841105659, 3.9765392659455623`}}, 0.04944350107474975]}}, 
+         InsetBox["2", {5.4939187301820365, 4.161434226298228}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{5.131360619258414, 4.346329186650893}, {
+            4.462808568173808, 4.28218443243923}}, 0.04944350107474975]}}, 
+         InsetBox["3", {4.797084593716111, 4.3142568095450615}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[1, 0.5, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{5.441364290312915, 2.976818759997934}, {
+            5.856476841105659, 3.9765392659455623`}}, 0.04944350107474975]}}, 
+         InsetBox["3", {5.648920565709287, 3.476679012971748}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{3.3638118411521054`, 3.0607623649809863`}, {
+             3.242630821948751, 3.5543033643269277`}, {3.4380526898477863`, 
+             4.023427922410618}}], 0.04944350107474975]}}, 
+         InsetBox["2", {3.333545676479872, 3.5472920031045}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{3.3638118411521054`, 3.0607623649809863`}, {
+             3.5592337090511315`, 3.529886923064786}, {3.4380526898477863`, 
+             4.023427922410618}}], 0.04944350107474975]}}, 
+         InsetBox["2", {3.4683188545200205, 3.536898284287104}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{3.1517325121918365`, 0.6368484182410605}, {
+            2.0257048984500163`, 0.3853017541917372}}, 0.04944350107474975]}},
+          InsetBox["5", {2.588718705320926, 0.5110750862163989}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{3.1517325121918365`, 0.6368484182410605}, {
+            4.293510476262698, 0.9913464921662218}}, 0.04944350107474975]}}, 
+         InsetBox["6", {3.7226214942272673, 0.8140974552036412}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{2.0257048984500163`, 0.3853017541917372}, {
+             1.6992367914174746`, 0.06444385417984744}, {1.2460500676844177`, 
+             0.}}], 0.04944350107474975]}}, 
+         InsetBox["2", {1.6628486058606387, 0.13807503894227666}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{2.0257048984500163`, 0.3853017541917372}, {
+             1.5725181747169585`, 0.3208579000118897}, {1.2460500676844177`, 
+             0.}}], 0.04944350107474975]}}, 
+         InsetBox["2", {1.6089063602737954, 0.24722671524946035}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {Dashing[{Small, Small}], 
+          {Arrowheads[0.], 
+           ArrowBox[{{4.293510476262698, 0.9913464921662218}, {
+            5.324496828648252, 1.1207248384589361`}}, 0.04944350107474975]}}, 
+         InsetBox["6", {4.809003652455475, 1.0560356653125789}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0], 
+          {Arrowheads[0.], 
+           ArrowBox[{{1.37669374803983, 3.0249965137334343`}, {
+            0.6527119586839247, 2.6815252765797495`}}, 0.04944350107474975]}},
+          InsetBox["3", {1.0147028533618774, 2.853260895156592}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{1.37669374803983, 3.0249965137334343`}, {
+            0.6273810904908217, 3.6403375913967477`}}, 0.04944350107474975]}},
+          InsetBox["1", {1.0020374192653259, 3.3326670525650908}, 
+          ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{0.6527119586839247, 2.6815252765797495`}, {
+             0.8635565052966805, 2.196533367040667}, {0.7453692318797582, 
+             1.6810681950290491`}}], 0.04944350107474975]}}, 
+         InsetBox["2", {0.7690725909903906, 2.187782744928108}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{0.6527119586839247, 2.6815252765797495`}, {
+             0.5345246852670124, 2.166060104568121}, {0.7453692318797582, 
+             1.6810681950290491`}}], 0.04944350107474975]}}, 
+         InsetBox["2", {0.6290085995732924, 2.174810726680691}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{0.6527119586839247, 2.6815252765797495`}, {
+             0.48237871113049685`, 3.1567660070957673`}, {0.6273810904908217, 
+             3.6403375913967477`}}], 0.04944350107474975]}}, 
+         InsetBox["2", {0.5729296625501834, 3.1591582732147314}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{0.6527119586839247, 2.6815252765797495`}, {
+             0.7977143380442521, 3.1650968608807215`}, {0.6273810904908217, 
+             3.6403375913967477`}}], 0.04944350107474975]}}, 
+         InsetBox["2", {0.7071633866245632, 3.162704594761766}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{5.823229141200094, 1.6290451445241025`}, {
+            5.324496828648252, 1.1207248384589361`}}, 0.04944350107474975]}}, 
+         InsetBox["4", {5.5738629849241725, 1.3748849914915193}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{5.823229141200094, 1.6290451445241025`}, {
+             6.113547191636126, 1.3171146807699012`}, {6.162041909814663, 
+             0.893754967363199}}], 0.04944350107474975]}}, 
+         InsetBox["1", {6.044105837908643, 1.285116949746671}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{5.823229141200094, 1.6290451445241025`}, {
+             5.87172385937859, 1.2056854311175629`}, {6.162041909814663, 
+             0.893754967363199}}], 0.04944350107474975]}}, 
+         InsetBox["1", {5.941165213106115, 1.2376831621406308}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {RGBColor[0, 0, 1], 
+          {Arrowheads[0.], 
+           ArrowBox[{{3.4380526898477863`, 4.023427922410618}, {
+            4.096872973167721, 4.852830693686762}}, 0.04944350107474975]}}, 
+         InsetBox["3", {3.7674628315077534, 4.4381293080486905}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{3.4380526898477863`, 4.023427922410618}, {
+             3.0770602232833193`, 4.216481546646905}, {2.9011268186368313`, 
+             4.58612015377111}}], 0.04944350107474975]}}, 
+         InsetBox["2", {3.1302012980470755, 4.267189227106098}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{{3.4380526898477863`, 4.023427922410618}, {
+             3.262119285201288, 4.393066529534756}, {2.9011268186368313`, 
+             4.58612015377111}}], 0.04944350107474975]}}, 
+         InsetBox["2", {3.208978210437543, 4.342358849075631}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{4.096872973167721, 4.852830693686762}, {
+            4.462808568173808, 4.28218443243923}}, 0.04944350107474975]}}, 
+         InsetBox["3", {4.279840770670765, 4.567507563062996}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}, {
+         {GrayLevel[0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[{{5.324496828648252, 1.1207248384589361`}, {
+            6.162041909814663, 0.893754967363199}}, 0.04944350107474975]}}, 
+         InsetBox["3", {5.743269369231458, 1.0072399029110675}, ImageScaled[{0.5, 0.5}],
+          BaseStyle->"Graphics"]}}, 
+       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[
+        0.7]}], {
+         DiskBox[{3.7555056188954086`, 4.689157078753341}, 
+          0.04944350107474975], 
+         InsetBox["\<\"El Paso\"\>", 
+          Offset[{2, 2}, {3.8049491199701584, 4.738600579828091}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{2.4743935726659667`, 4.95069690939933}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Houston\"\>", 
+          Offset[{2, 2}, {2.5238370737407165, 5.00014041047408}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{6.189316169278343, 2.6050773665595557`}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Portland\"\>", 
+          Offset[{2, 2}, {6.238759670353093, 2.6545208676343055}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{5.967090037000238, 3.510576835443061}, 0.04944350107474975],
+          InsetBox["\<\"San Francisco\"\>", 
+          Offset[{2, 2}, {6.016533538074988, 3.5600203365178107}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{2.2329166199935107`, 2.767470722330094}, 
+           0.04944350107474975]}, 
+         InsetBox["\<\"Saint Louis\"\>", 
+          Offset[{2, 2}, {2.2823601210682605, 2.8169142234048437}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{1.58323971420642, 1.9457542289683638`}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Pittsburgh\"\>", 
+          Offset[{2, 2}, {1.6326832152811699, 1.9951977300431136}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{4.723176409969607, 1.9248471112522871`}, 
+           0.04944350107474975]}, 
+         InsetBox["\<\"Helena\"\>", 
+          Offset[{2, 2}, {4.772619911044357, 1.974290612327037}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{4.302964403818929, 3.1178205844622564`}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Denver\"\>", 
+          Offset[{2, 2}, {4.352407904893679, 3.1672640855370062}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{2.1998361406131504`, 3.8446622230201255`}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Little Rock\"\>", 
+          Offset[{2, 2}, {2.2492796416879, 3.8941057240948753}], ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{1.3159630418399095`, 4.418066067357397}, 
+          0.04944350107474975], 
+         InsetBox["\<\"New Orleans\"\>", 
+          Offset[{2, 2}, {1.3654065429146593, 4.467509568432146}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{2.706224895446542, 1.8730709306016093`}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Chicago\"\>", 
+          Offset[{2, 2}, {2.755668396521292, 1.9225144316763592}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{1.2141155477600132`, 0.8724804908316921}, 
+          0.04944350107474975], 
+         InsetBox["\<\"New York\"\>", 
+          Offset[{2, 2}, {1.263559048834763, 0.9219239919064418}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{3.575863499106424, 1.3820329910402973`}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Duluth\"\>", 
+          Offset[{2, 2}, {3.625307000181174, 1.4314764921150471}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{2.5078512404872617`, 1.1344662581636034`}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Toronto\"\>", 
+          Offset[{2, 2}, {2.5572947415620115, 1.1839097592383532}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{3.771655167088725, 2.229137624845073}, 
+           0.04944350107474975]}, 
+         InsetBox["\<\"Omaha\"\>", 
+          Offset[{2, 2}, {3.821098668163475, 2.278581125919823}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{0., 3.494026820671034}, 0.04944350107474975], 
+         InsetBox["\<\"Charleston\"\>", 
+          Offset[{2, 2}, {0.04944350107474975, 3.543470321745784}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{0.29694428387707417`, 4.243487303063811}, 
+           0.04944350107474975]}, 
+         InsetBox["\<\"Miami\"\>", 
+          Offset[{2, 2}, {0.34638778495182393, 4.292930804138561}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{5.131360619258414, 4.346329186650893}, 0.04944350107474975],
+          InsetBox["\<\"Los Angeles\"\>", 
+          Offset[{2, 2}, {5.180804120333164, 4.395772687725643}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{5.441364290312915, 2.976818759997934}, 0.04944350107474975],
+          InsetBox["\<\"Salt Lake City\"\>", 
+          Offset[{2, 2}, {5.490807791387665, 3.026262261072684}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{3.3638118411521054`, 3.0607623649809863`}, 
+           0.04944350107474975]}, 
+         InsetBox["\<\"Kansas City\"\>", 
+          Offset[{2, 2}, {3.4132553422268552, 3.110205866055736}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{3.1517325121918365`, 0.6368484182410605}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Sault St. Marie\"\>", 
+          Offset[{2, 2}, {3.2011760132665863, 0.6862919193158102}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{2.0257048984500163`, 0.3853017541917372}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Montreal\"\>", 
+          Offset[{2, 2}, {2.075148399524766, 0.43474525526648694}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{4.293510476262698, 0.9913464921662218}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Winnipeg\"\>", 
+          Offset[{2, 2}, {4.342953977337448, 1.0407899932409717}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{1.37669374803983, 3.0249965137334343`}, 
+           0.04944350107474975]}, 
+         InsetBox["\<\"Nashville\"\>", 
+          Offset[{2, 2}, {1.4261372491145798, 3.074440014808184}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{0.6527119586839247, 2.6815252765797495`}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Raleigh\"\>", 
+          Offset[{2, 2}, {0.7021554597586744, 2.7309687776544993}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{0.7453692318797582, 1.6810681950290491`}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Washington\"\>", 
+          Offset[{2, 2}, {0.7948127329545079, 1.730511696103799}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{0.6273810904908217, 3.6403375913967477`}, 
+           0.04944350107474975]}, 
+         InsetBox["\<\"Atlanta\"\>", 
+          Offset[{2, 2}, {0.6768245915655714, 3.6897810924714975}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{5.856476841105659, 3.9765392659455623`}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Las Vegas\"\>", 
+          Offset[{2, 2}, {5.9059203421804085, 4.025982767020312}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{5.823229141200094, 1.6290451445241025`}, 
+           0.04944350107474975]}, 
+         InsetBox["\<\"Seattle\"\>", 
+          Offset[{2, 2}, {5.872672642274844, 1.6784886455988524}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{3.4380526898477863`, 4.023427922410618}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Oklahoma City\"\>", 
+          Offset[{2, 2}, {3.487496190922536, 4.072871423485368}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{1.2460500676844177`, 0.}, 0.04944350107474975], 
+         InsetBox["\<\"Boston\"\>", 
+          Offset[{2, 2}, {1.2954935687591675, 0.04944350107474975}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{4.096872973167721, 4.852830693686762}, 0.04944350107474975],
+          InsetBox["\<\"Santa Fe\"\>", 
+          Offset[{2, 2}, {4.146316474242471, 4.902274194761512}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{2.9011268186368313`, 4.58612015377111}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Dallas\"\>", 
+          Offset[{2, 2}, {2.950570319711581, 4.63556365484586}], ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{5.324496828648252, 1.1207248384589361`}, 
+          0.04944350107474975], 
+         InsetBox["\<\"Calgary\"\>", 
+          Offset[{2, 2}, {5.373940329723002, 1.170168339533686}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{4.462808568173808, 4.28218443243923}, 0.04944350107474975], 
+         InsetBox["\<\"Phoenix\"\>", 
+          Offset[{2, 2}, {4.512252069248558, 4.33162793351398}], ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         {Hue[1, 1, 0.7], EdgeForm[{Hue[1, 1, 0.7], Opacity[1]}], 
+          DiskBox[{6.162041909814663, 0.893754967363199}, 
+           0.04944350107474975]}, 
+         InsetBox["\<\"Vancouver\"\>", 
+          Offset[{2, 2}, {6.211485410889413, 0.9431984684379487}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{3.919815078707506*^9},
+ CellLabel->
+  "Out[299]=",ExpressionUUID->"a796ebe2-3173-3e43-aed0-5ade64126461"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"subset", " ", "=", " ", 
+  RowBox[{"Join", "[", 
+   RowBox[{"pinkRoutes", ",", " ", "greenRoutes"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.91981477921426*^9, 3.9198148079918194`*^9}},
+ CellLabel->
+  "In[279]:=",ExpressionUUID->"fa5070ed-3944-3943-8051-036fb4c63cae"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\"\<Duluth\>\"", ",", "\"\<Toronto\>\"", ",", "6", ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0.5, 0.5]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Portland\>\"", ",", "\"\<San Francisco\>\"", ",", "5", ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0.5, 0.5]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Denver\>\"", ",", "\"\<Omaha\>\"", ",", "4", ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0.5, 0.5]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Charleston\>\"", ",", "\"\<Miami\>\"", ",", "4", ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0.5, 0.5]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<San Francisco\>\"", ",", "\"\<Los Angeles\>\"", ",", "3", ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0.5, 0.5]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Helena\>\"", ",", "\"\<Salt Lake City\>\"", ",", "3", ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0.5, 0.5]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Kansas City\>\"", ",", "\"\<Saint Louis\>\"", ",", "2", ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0.5, 0.5]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<El Paso\>\"", ",", "\"\<Houston\>\"", ",", "6", ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Portland\>\"", ",", "\"\<San Francisco\>\"", ",", "5", ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Saint Louis\>\"", ",", "\"\<Pittsburgh\>\"", ",", "5", ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Helena\>\"", ",", "\"\<Denver\>\"", ",", "4", ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Little Rock\>\"", ",", "\"\<New Orleans\>\"", ",", "3", ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Chicago\>\"", ",", "\"\<Saint Louis\>\"", ",", "2", ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Pittsburgh\>\"", ",", "\"\<New York\>\"", ",", "2", ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}]}], "}"}], "\[IndentingNewLine]", 
+ RowBox[{"EdgeTaggedGraph", "[", 
+  RowBox[{"MapThread", "[", 
+   RowBox[{"Style", ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"UndirectedEdge", "@@@", 
+       RowBox[{"subset", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", 
+          RowBox[{"1", ";;", "2"}]}], "]"}], "]"}]}], ",", 
+      RowBox[{"subset", "[", 
+       RowBox[{"[", 
+        RowBox[{"All", ",", "4"}], "]"}], "]"}]}], "}"}]}], "]"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.919814811734562*^9, 3.9198148356394215`*^9}, {
+  3.9198149538897285`*^9, 3.9198149609439354`*^9}},
+ CellLabel->
+  "In[284]:=",ExpressionUUID->"f07ac9de-6aae-be40-a83b-eae940bb1d76"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Duluth\"\>", ",", "\<\"Toronto\"\>", ",", "6", ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0.5, 0.5]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Portland\"\>", ",", "\<\"San Francisco\"\>", ",", "5", ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0.5, 0.5]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Denver\"\>", ",", "\<\"Omaha\"\>", ",", "4", ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0.5, 0.5]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Charleston\"\>", ",", "\<\"Miami\"\>", ",", "4", ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0.5, 0.5]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"San Francisco\"\>", ",", "\<\"Los Angeles\"\>", ",", "3", 
+     ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0.5, 0.5]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Helena\"\>", ",", "\<\"Salt Lake City\"\>", ",", "3", ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0.5, 0.5]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Kansas City\"\>", ",", "\<\"Saint Louis\"\>", ",", "2", ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0.5, 0.5]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"El Paso\"\>", ",", "\<\"Houston\"\>", ",", "6", ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Portland\"\>", ",", "\<\"San Francisco\"\>", ",", "5", ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Saint Louis\"\>", ",", "\<\"Pittsburgh\"\>", ",", "5", ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Helena\"\>", ",", "\<\"Denver\"\>", ",", "4", ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Little Rock\"\>", ",", "\<\"New Orleans\"\>", ",", "3", ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Chicago\"\>", ",", "\<\"Saint Louis\"\>", ",", "2", ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Pittsburgh\"\>", ",", "\<\"New York\"\>", ",", "2", ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.9198148212806683`*^9, 3.919814836795532*^9}, 
+   3.9198149613387527`*^9},
+ CellLabel->
+  "Out[284]=",ExpressionUUID->"30129aa1-3568-a04e-aa6d-43041f9ecde0"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{
+      "Duluth", "Toronto", "Portland", "San Francisco", "Denver", "Omaha", 
+       "Charleston", "Miami", "Los Angeles", "Helena", "Salt Lake City", 
+       "Kansas City", "Saint Louis", "El Paso", "Houston", "Pittsburgh", 
+       "Little Rock", "New Orleans", "Chicago", "New York"}, {
+      Null, {{1, 2}, {3, 4}, {5, 6}, {7, 8}, {4, 9}, {10, 11}, {12, 13}, {14, 
+       15}, {3, 4}, {13, 16}, {10, 5}, {17, 18}, {19, 13}, {16, 20}}, {1, 1, 
+       1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1}}, {
+      EdgeStyle -> {UndirectedEdge["Charleston", "Miami", 1] -> {
+           RGBColor[1, 0.5, 0.5]}, 
+         UndirectedEdge["Portland", "San Francisco", 2] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["Saint Louis", "Pittsburgh", 1] -> {
+           RGBColor[0, 1, 0]}, 
+         UndirectedEdge["Kansas City", "Saint Louis", 1] -> {
+           RGBColor[1, 0.5, 0.5]}, 
+         UndirectedEdge["Pittsburgh", "New York", 1] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["Duluth", "Toronto", 1] -> {
+           RGBColor[1, 0.5, 0.5]}, 
+         UndirectedEdge["Little Rock", "New Orleans", 1] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["El Paso", "Houston", 1] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["Helena", "Denver", 1] -> {
+           RGBColor[0, 1, 0]}, UndirectedEdge["Denver", "Omaha", 1] -> {
+           RGBColor[1, 0.5, 0.5]}, 
+         UndirectedEdge["Portland", "San Francisco", 1] -> {
+           RGBColor[1, 0.5, 0.5]}, 
+         UndirectedEdge["Helena", "Salt Lake City", 1] -> {
+           RGBColor[1, 0.5, 0.5]}, 
+         UndirectedEdge["San Francisco", "Los Angeles", 1] -> {
+           RGBColor[1, 0.5, 0.5]}, 
+         UndirectedEdge["Chicago", "Saint Louis", 1] -> {
+           RGBColor[0, 1, 0]}}}]]}, 
+    TagBox[GraphicsGroupBox[GraphicsComplexBox[CompressedData["
+1:eJxTTMoPSmViYGAwAWIQfWrmghV797E7nBDNOOm0kufAFGPHwOra//YwfoZO
+8LVvAufs13ldFmZVZT1wv8zdNP7wZzj/aCYvywJFJgfFpxyWz5IYDzjMFuT0
+vcXpMPs6hN+beuqW3KHP9lYb5r5Tfs4BNw/GF1C9m8D/kNEBZt5++7VLFSw+
+24s+hOhPgKrnuYnKh5qzX+TGXPmf617bJ920T771/91+mH9g5sP8A+O/2Hjz
+rdPM//acOb4GeX/f7Ye5D92/MP6BSanCEenn7KWf1Ozpc/y930hrrmNIEruD
+3CbbI3x/3u33fdW6KuX0Vfs03pL7XjdZDiSwzT62seW6/Y2//Cllx1kO8F3c
+eyPc5ab9Km55Bb8dLAd4d3Zd9eW8bX9DWID39mqWA3l783vaL92xf8z2tFNl
+EcsBl61lbt/m3bPfsvRqmMFslgMh6u6bj5g9sE+6+nwi03SWAzL5la3T5R7a
+v+qt3zJ3KsuBA56rZqW8eQvnd0y8k2N+5R1cvVXciz8Nu9/DzRN6+1XnTsAH
+uH3aeutnaR3+AHePVsYjyQyTj3D3XpPKnhe45KP9Tah/bicWPF0i9AnuX5j/
+v7UbeewvYIX7v2X6tMOTm1jh/t/U2c6+ZyIr3P8tjdOk9Oexwv1f2Xdw7tPl
+rHD/r3h/4cLNdaxw///av28q+2ZWuP+L2NWLc7awwv0P48P8D1MP8z/MPJj/
+YfbB/A9zD8z/MPfC/N8M9Q/M/zD/AgAoPJ91
+       "], {
+        {Hue[0.6, 0.7, 0.5], Opacity[0.7], 
+         {RGBColor[1, 0.5, 0.5], 
+          {Arrowheads[0.], ArrowBox[{1, 2}, 0.032682494402133444`]}}, 
+         {RGBColor[1, 0.5, 0.5], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{3, {0.7350454629766887, -2.478585104754654}, 4}], 
+            0.032682494402133444`]}}, 
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], 
+           ArrowBox[
+            BezierCurveBox[{3, {0.735045462976691, -2.8075670766525342`}, 4}],
+             0.032682494402133444`]}}, 
+         {RGBColor[1, 0.5, 0.5], 
+          {Arrowheads[0.], ArrowBox[{4, 9}, 0.032682494402133444`]}}, 
+         {RGBColor[1, 0.5, 0.5], 
+          {Arrowheads[0.], ArrowBox[{5, 6}, 0.032682494402133444`]}}, 
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], ArrowBox[{5, 10}, 0.032682494402133444`]}}, 
+         {RGBColor[1, 0.5, 0.5], 
+          {Arrowheads[0.], ArrowBox[{7, 8}, 0.032682494402133444`]}}, 
+         {RGBColor[1, 0.5, 0.5], 
+          {Arrowheads[0.], ArrowBox[{10, 11}, 0.032682494402133444`]}}, 
+         {RGBColor[1, 0.5, 0.5], 
+          {Arrowheads[0.], ArrowBox[{12, 13}, 0.032682494402133444`]}}, 
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], ArrowBox[{13, 16}, 0.032682494402133444`]}}, 
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], ArrowBox[{13, 19}, 0.032682494402133444`]}}, 
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], ArrowBox[{14, 15}, 0.032682494402133444`]}}, 
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], ArrowBox[{16, 20}, 0.032682494402133444`]}}, 
+         {RGBColor[0, 1, 0], 
+          {Arrowheads[0.], ArrowBox[{17, 18}, 0.032682494402133444`]}}}, 
+        {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+         DiskBox[1, 0.032682494402133444], DiskBox[2, 0.032682494402133444], 
+         DiskBox[3, 0.032682494402133444], DiskBox[4, 0.032682494402133444], 
+         DiskBox[5, 0.032682494402133444], DiskBox[6, 0.032682494402133444], 
+         DiskBox[7, 0.032682494402133444], DiskBox[8, 0.032682494402133444], 
+         DiskBox[9, 0.032682494402133444], DiskBox[10, 0.032682494402133444], 
+         DiskBox[11, 0.032682494402133444], DiskBox[12, 0.032682494402133444],
+          DiskBox[13, 0.032682494402133444], 
+         DiskBox[14, 0.032682494402133444], DiskBox[15, 0.032682494402133444],
+          DiskBox[16, 0.032682494402133444], 
+         DiskBox[17, 0.032682494402133444], DiskBox[18, 0.032682494402133444],
+          DiskBox[19, 0.032682494402133444], 
+         DiskBox[20, 0.032682494402133444]}}]],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{{3.9198148212806683`*^9, 3.919814836795532*^9}, 
+   3.919814961379265*^9},
+ CellLabel->
+  "Out[285]=",ExpressionUUID->"8527bea2-057a-e94a-b19c-0a2c75d2c45d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"test", " ", "=", " ", 
   RowBox[{"Graph", "[", "\[IndentingNewLine]", 
@@ -46,10 +2255,10 @@ Cell[BoxData[
     "\[IndentingNewLine]", 
     RowBox[{"EdgeLabels", "->", "\"\<EdgeWeight\>\""}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.919768423598997*^9, 3.919768606964239*^9}, {
-  3.919768651404747*^9, 3.9197686610032196`*^9}, {3.919768706753023*^9, 
-  3.919768713928499*^9}, {3.9197688117727222`*^9, 3.919768825748043*^9}, {
-  3.9197689470299664`*^9, 3.9197689495716686`*^9}, {3.9197704165727234`*^9, 
-  3.9197704308038826`*^9}, {3.9197714970985565`*^9, 3.9197714995206966`*^9}},
+  3.919768651404747*^9, 3.9197686610032187`*^9}, {3.919768706753023*^9, 
+  3.919768713928499*^9}, {3.919768811772722*^9, 3.919768825748043*^9}, {
+  3.9197689470299664`*^9, 3.9197689495716677`*^9}, {3.9197704165727234`*^9, 
+  3.9197704308038816`*^9}, {3.9197714970985565`*^9, 3.919771499520696*^9}},
  CellLabel->"In[24]:=",ExpressionUUID->"65a1dca2-6852-354a-b068-39520b77d516"],
 
 Cell[BoxData[
@@ -1095,7 +3304,7 @@ AHcW1yI=
   SelectWithContents->True,
   Selectable->False]], "Output",
  CellChangeTimes->{
-  3.919771018779028*^9, {3.9197712457371235`*^9, 3.9197712833371124`*^9}},
+  3.919771018779028*^9, {3.919771245737124*^9, 3.919771283337113*^9}},
  CellLabel->"Out[38]=",ExpressionUUID->"eb710607-09fa-424c-b1b7-0b73013822a1"]
 }, Open  ]],
 
@@ -1417,66 +3626,90 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[558, 20, 17768, 451, 2255, "Input",ExpressionUUID->"6491a09d-896c-624d-8ae9-e05e09ff396a"],
+Cell[18329, 473, 289, 8, 81, "Text",ExpressionUUID->"7a8414c5-56fd-0148-b17c-3f7329889b73"],
 Cell[CellGroupData[{
-Cell[580, 22, 1627, 30, 238, "Input",ExpressionUUID->"65a1dca2-6852-354a-b068-39520b77d516"],
-Cell[2210, 54, 3851, 79, 188, "Output",ExpressionUUID->"fb265400-55c4-9e43-b0ec-5da401d718ff"]
+Cell[18643, 485, 722, 18, 48, "Input",ExpressionUUID->"457c5d6f-5141-0b47-b498-4ccd83db8907"],
+Cell[19368, 505, 824, 18, 71, "Output",ExpressionUUID->"332ad73d-e91a-9144-b83d-ed77ce5a3d3e"],
+Cell[20195, 525, 2373, 63, 71, "Output",ExpressionUUID->"11a5c486-c1a6-544b-8a6f-3b2e79a11b7e"]
+}, Open  ]],
+Cell[22583, 591, 1746, 37, 124, "Input",ExpressionUUID->"51b99ea6-7819-0541-8906-38c264c194d5"],
+Cell[CellGroupData[{
+Cell[24354, 632, 1607, 41, 200, "Input",ExpressionUUID->"73508130-e0ce-824a-b5ab-b318d8b40622"],
+Cell[25964, 675, 7504, 158, 112, "Output",ExpressionUUID->"d65c4835-91a7-b74f-81c3-5a307d26dde4"]
+}, Open  ]],
+Cell[33483, 836, 855, 15, 124, "Input",ExpressionUUID->"2e14df8f-fb35-754d-bc58-dacd14d1648c"],
+Cell[CellGroupData[{
+Cell[34363, 855, 294, 6, 28, "Input",ExpressionUUID->"63a5dcfd-fcd7-1540-98a1-1abdf23fc3d4"],
+Cell[34660, 863, 415, 8, 32, "Output",ExpressionUUID->"2d4248eb-eeff-c545-93cc-a068de991ef8"],
+Cell[35078, 873, 57979, 1090, 275, "Output",ExpressionUUID->"a796ebe2-3173-3e43-aed0-5ade64126461"]
+}, Open  ]],
+Cell[93072, 1966, 293, 6, 28, "Input",ExpressionUUID->"fa5070ed-3944-3943-8051-036fb4c63cae"],
+Cell[CellGroupData[{
+Cell[93390, 1976, 3421, 77, 181, "Input",ExpressionUUID->"f07ac9de-6aae-be40-a83b-eae940bb1d76"],
+Cell[96814, 2055, 2940, 63, 147, "Output",ExpressionUUID->"30129aa1-3568-a04e-aa6d-43041f9ecde0"],
+Cell[99757, 2120, 5661, 106, 416, "Output",ExpressionUUID->"8527bea2-057a-e94a-b19c-0a2c75d2c45d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6098, 138, 410, 8, 28, "Input",ExpressionUUID->"2497e5c1-ca5c-f144-b372-5d52f8b4c104"],
-Cell[6511, 148, 350, 7, 32, "Output",ExpressionUUID->"cf337179-3ad3-6147-b785-fca063bd7856"]
+Cell[105455, 2231, 1623, 30, 238, "Input",ExpressionUUID->"65a1dca2-6852-354a-b068-39520b77d516"],
+Cell[107081, 2263, 3851, 79, 188, "Output",ExpressionUUID->"fb265400-55c4-9e43-b0ec-5da401d718ff"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6898, 160, 1824, 46, 124, "Input",ExpressionUUID->"16c5a68a-c191-b64e-aaab-8bd10e222011"],
-Cell[8725, 208, 4212, 85, 188, "Output",ExpressionUUID->"e6c6c1e7-6bb7-6f4b-a162-f23db49b8918"]
+Cell[110969, 2347, 410, 8, 28, "Input",ExpressionUUID->"2497e5c1-ca5c-f144-b372-5d52f8b4c104"],
+Cell[111382, 2357, 350, 7, 32, "Output",ExpressionUUID->"cf337179-3ad3-6147-b785-fca063bd7856"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12974, 298, 268, 4, 28, "Input",ExpressionUUID->"d34a0ad4-a89a-c54c-8205-82aab1190d63"],
-Cell[13245, 304, 10334, 218, 62, "Output",ExpressionUUID->"6bae85e8-11a8-294d-9da7-195691522fc4"]
+Cell[111769, 2369, 1824, 46, 124, "Input",ExpressionUUID->"16c5a68a-c191-b64e-aaab-8bd10e222011"],
+Cell[113596, 2417, 4212, 85, 188, "Output",ExpressionUUID->"e6c6c1e7-6bb7-6f4b-a162-f23db49b8918"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[23616, 527, 598, 14, 28, "Input",ExpressionUUID->"7697d2fa-a57c-b746-be9a-50be6bc5dded"],
-Cell[24217, 543, 3960, 78, 188, "Output",ExpressionUUID->"6d8a620d-f8bc-e542-a91d-8a776e82f271"]
+Cell[117845, 2507, 268, 4, 28, "Input",ExpressionUUID->"d34a0ad4-a89a-c54c-8205-82aab1190d63"],
+Cell[118116, 2513, 10334, 218, 62, "Output",ExpressionUUID->"6bae85e8-11a8-294d-9da7-195691522fc4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[28214, 626, 177, 2, 28, "Input",ExpressionUUID->"61e3777b-2caa-0946-8f2a-4dc4bc585d70"],
-Cell[28394, 630, 3727, 77, 188, "Output",ExpressionUUID->"ea19349b-5d1a-d442-949b-d30235b6eb6e"]
+Cell[128487, 2736, 598, 14, 28, "Input",ExpressionUUID->"7697d2fa-a57c-b746-be9a-50be6bc5dded"],
+Cell[129088, 2752, 3960, 78, 188, "Output",ExpressionUUID->"6d8a620d-f8bc-e542-a91d-8a776e82f271"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[32158, 712, 249, 4, 28, "Input",ExpressionUUID->"9e1d03db-713c-8640-a858-6ce9f24081d3"],
-Cell[32410, 718, 4710, 72, 50, "Message",ExpressionUUID->"d015da37-0a15-ab46-80fc-3f50af884f7c"],
-Cell[37123, 792, 4012, 82, 59, "Output",ExpressionUUID->"634f56e1-f627-6348-a3d3-d2b1b2cce33f"]
+Cell[133085, 2835, 177, 2, 28, "Input",ExpressionUUID->"61e3777b-2caa-0946-8f2a-4dc4bc585d70"],
+Cell[133265, 2839, 3727, 77, 188, "Output",ExpressionUUID->"ea19349b-5d1a-d442-949b-d30235b6eb6e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[41172, 879, 277, 4, 28, "Input",ExpressionUUID->"203f4f94-e87a-ff4b-832c-01a4c9210833"],
-Cell[41452, 885, 10158, 213, 62, "Output",ExpressionUUID->"eb710607-09fa-424c-b1b7-0b73013822a1"]
+Cell[137029, 2921, 249, 4, 28, "Input",ExpressionUUID->"9e1d03db-713c-8640-a858-6ce9f24081d3"],
+Cell[137281, 2927, 4710, 72, 50, "Message",ExpressionUUID->"d015da37-0a15-ab46-80fc-3f50af884f7c"],
+Cell[141994, 3001, 4012, 82, 59, "Output",ExpressionUUID->"634f56e1-f627-6348-a3d3-d2b1b2cce33f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[51647, 1103, 159, 3, 28, "Input",ExpressionUUID->"32d4ff3b-e239-b448-a123-f8258eda1bf8"],
-Cell[51809, 1108, 381, 11, 81, "Output",ExpressionUUID->"b584209b-773c-ab4c-93d3-a687cd4b05b5"]
+Cell[146043, 3088, 277, 4, 28, "Input",ExpressionUUID->"203f4f94-e87a-ff4b-832c-01a4c9210833"],
+Cell[146323, 3094, 10154, 213, 62, "Output",ExpressionUUID->"eb710607-09fa-424c-b1b7-0b73013822a1"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[52227, 1124, 216, 3, 28, "Input",ExpressionUUID->"e0336e77-965d-c843-a643-46662ddb2489"],
-Cell[52446, 1129, 3248, 67, 188, "Output",ExpressionUUID->"082d7ea0-a614-1244-bfaf-47fd81a6a477"]
+Cell[156514, 3312, 159, 3, 28, "Input",ExpressionUUID->"32d4ff3b-e239-b448-a123-f8258eda1bf8"],
+Cell[156676, 3317, 381, 11, 81, "Output",ExpressionUUID->"b584209b-773c-ab4c-93d3-a687cd4b05b5"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[55731, 1201, 211, 3, 28, "Input",ExpressionUUID->"a5bf8e9d-5e43-ce41-9ce9-2ac9a0c4dfe1"],
-Cell[55945, 1206, 662, 11, 52, "Output",ExpressionUUID->"e6faf2ac-68e2-ad42-a8d3-96e4188ef32b"]
+Cell[157094, 3333, 216, 3, 28, "Input",ExpressionUUID->"e0336e77-965d-c843-a643-46662ddb2489"],
+Cell[157313, 3338, 3248, 67, 188, "Output",ExpressionUUID->"082d7ea0-a614-1244-bfaf-47fd81a6a477"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[56644, 1222, 271, 5, 28, "Input",ExpressionUUID->"91d70ae1-461e-534a-bf82-a881eddee7db"],
-Cell[56918, 1229, 258, 5, 32, "Output",ExpressionUUID->"4a648478-fec7-9447-b769-539495d525fa"]
+Cell[160598, 3410, 211, 3, 28, "Input",ExpressionUUID->"a5bf8e9d-5e43-ce41-9ce9-2ac9a0c4dfe1"],
+Cell[160812, 3415, 662, 11, 52, "Output",ExpressionUUID->"e6faf2ac-68e2-ad42-a8d3-96e4188ef32b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[57213, 1239, 385, 8, 28, "Input",ExpressionUUID->"e593b189-d5fb-b14e-9f95-04f07227712a"],
-Cell[57601, 1249, 975, 28, 52, "Output",ExpressionUUID->"572a9af0-7ec5-9244-b355-63d5ed37e6ee"]
+Cell[161511, 3431, 271, 5, 28, "Input",ExpressionUUID->"91d70ae1-461e-534a-bf82-a881eddee7db"],
+Cell[161785, 3438, 258, 5, 32, "Output",ExpressionUUID->"4a648478-fec7-9447-b769-539495d525fa"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[58613, 1282, 218, 3, 28, "Input",ExpressionUUID->"af1207dd-534a-2749-b21d-5bef539f0e2d"],
-Cell[58834, 1287, 841, 24, 52, "Output",ExpressionUUID->"b79b489f-1baa-9a45-9ba6-b704dcc9b0eb"]
+Cell[162080, 3448, 385, 8, 28, "Input",ExpressionUUID->"e593b189-d5fb-b14e-9f95-04f07227712a"],
+Cell[162468, 3458, 975, 28, 52, "Output",ExpressionUUID->"572a9af0-7ec5-9244-b355-63d5ed37e6ee"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[59712, 1316, 574, 13, 48, "Input",ExpressionUUID->"e62d9312-bdeb-af42-99db-cc4ff92543c4"],
-Cell[60289, 1331, 3328, 68, 211, "Output",ExpressionUUID->"ad9e42e8-703b-4244-acf4-7d9c7adbc937"]
+Cell[163480, 3491, 218, 3, 28, "Input",ExpressionUUID->"af1207dd-534a-2749-b21d-5bef539f0e2d"],
+Cell[163701, 3496, 841, 24, 52, "Output",ExpressionUUID->"b79b489f-1baa-9a45-9ba6-b704dcc9b0eb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[164579, 3525, 574, 13, 48, "Input",ExpressionUUID->"e62d9312-bdeb-af42-99db-cc4ff92543c4"],
+Cell[165156, 3540, 3328, 68, 188, "Output",ExpressionUUID->"ad9e42e8-703b-4244-acf4-7d9c7adbc937"]
 }, Open  ]]
 }
 ]
